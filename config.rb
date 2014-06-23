@@ -118,7 +118,7 @@ configure :build do
   # First: gem install middleman-smusher
   # require "middleman-smusher"
   # activate :smusher
-  set :base_url, "/locawebstyle"
+  set :base_url, "/locawebstyle-v1"
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
