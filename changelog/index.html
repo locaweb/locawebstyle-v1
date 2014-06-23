@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>Versão 0.32.0 - Guia de estilos da Locaweb</title>
+  <title>Versão 0.36.0 - Guia de estilos da Locaweb</title>
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
@@ -35,11 +35,23 @@
 	<div class="row-fluid">
 		<div class="span9">
 				<div class="paginate">
-		<p class="page_counter">página 1 de 2</p>
+		<p class="page_counter">página 1 de 3</p>
 
 		
 	</div>
 
+	<article>
+		<h1><a href="/locawebstyle-v1/changelog/2014/02/10/versao_1-2-17">Versão 1.2.17</a></h1>
+		<div class="infoPost">
+			<small>2014/02/10</small>
+		</div>
+		<!-- use article.summary(250) if you have Nokogiri available to show just
+		the first 250 characters -->
+		<h2 id='adies'>Adições</h2>
+
+<p>Novo elemento <code>.boxList</code> (caixa com colunas de informações). Ele tem muitas variações de layout, veja o <a href='http://locaweb.github.io/locawebstyle/v1/manual/aplicacoes/box-com-colunas/'>exemplo na documentação</a>.</p>
+	</article>
+	<hr>
 	<article>
 		<h1><a href="/locawebstyle-v1/changelog/2014/01/28/versao_1-2-16">versao_1.2.16</a></h1>
 		<div class="infoPost">
@@ -54,6 +66,22 @@
 <h2 id='documentao'>Documentação</h2>
 
 <p>- Criada documentação da nova aplicaçao <a href='/manual/aplicacoes/soma-valores'>Soma valores</a>.</p>
+	</article>
+	<hr>
+	<article>
+		<h1><a href="/locawebstyle-v1/changelog/2013/12/13/versao_1-2-15">Versão 1.2.15</a></h1>
+		<div class="infoPost">
+			<small>2013/12/13</small>
+		</div>
+		<!-- use article.summary(250) if you have Nokogiri available to show just
+		the first 250 characters -->
+		<p><strong>Melhorias e correções</strong></p>
+
+<p>- Criação de 2 novos ícones (<code>chamaicon-addDomain</code> e <code>ico-server-config</code>).</p>
+
+<p>- Criaçao do documentação de classes funcionais.</p>
+
+<p>- Nova classe funcional <code>.noStyleInput</code> (remove estilo dos inputs).</p>
 	</article>
 	<hr>
 	<article>
@@ -343,54 +371,6 @@ $(".customSelect").select2({
 </pre>
 	</article>
 	<hr>
-	<article>
-		<h1><a href="/locawebstyle-v1/changelog/2012/12/19/versao_0-34-0">Versão 0.34.0</a></h1>
-		<div class="infoPost">
-			<small>2012/12/19</small>
-		</div>
-		<!-- use article.summary(250) if you have Nokogiri available to show just
-		the first 250 characters -->
-		<h4 id='bootstrap_222'>Bootstrap 2.2.2</h4>
-
-<p>Atualizamos a versão do Bootstrap. A versão anterior era a 2.1.0.</p>
-
-<h4 id='cones_do_bootstrap'>Ícones do Bootstrap</h4>
-
-<p>O endereço para as imagens dos ícones do Bootstrap estava quebrada. Por causa disso os ícones naturais do Bootstrap não apareciam. Esse bug foi arrumado com essa versão.</p>
-
-<h4 id='insero_da_classe_funcional_para_vertical_align'>Inserção da classe funcional para Vertical Align</h4>
-
-<p>Inserção de uma nova classe funcional para a propriedade vertical-align com os valores top, bottom e middle.</p>
-	</article>
-	<hr>
-	<article>
-		<h1><a href="/locawebstyle-v1/changelog/2012/12/11/versao_0-32-0">Versão 0.32.0</a></h1>
-		<div class="infoPost">
-			<small>2012/12/11</small>
-		</div>
-		<!-- use article.summary(250) if you have Nokogiri available to show just
-		the first 250 characters -->
-		<h4 id='bug_background_ie'>Bug Background IE</h4>
-
-<p>Havia um background cinza maluco aparecendo no IE. Isso acontece por causa do degrade que usamos para decorar o fundo. Fazemos esse degrade com CSS e o IE não entende direito. Logo, para Internet Explorer deixamos tudo branco, sem o degrade. Como esse gradiente é muito discreto, não há tantos problemas visuais.</p>
-
-<h4 id='alternando_textos'>Alternando textos</h4>
-
-<p>Melhoramos o sistema para alternar textos em elementos quando necessário. <a href='http://developer.locaweb.com.br/locawebstyle/elementos/alternando-textos/'>Leia a documentação aqui</a>.</p>
-
-<h4 id='pacote_padro_acessibilidade'>Pacote padrão acessibilidade</h4>
-
-<p>Estamos começando a inserir features de acessibilidade no Locaweb Style. A ideia é que o Locaweb Style preveja uma camada padrão de Acessibilidade para suprir necessidades genéricas de todos os projetos. Para tarefas de acessibilidade mais específicas é sugerido que cada projeto tenha suas soluções individuais. O Locaweb Style vai criar um menu acessível escondido e vai marcar com WAI-ARIA os elementos padrões do Locaweb Style.</p>
-
-<h4 id='mudana_de_nomenclatura'>Mudança de nomenclatura</h4>
-
-<p>A nomenclatura que escolhemos para nomear o CSS e JS do Locaweb Style vai mudar. Antes usávamos algo como: <strong>locastyle-0-30-0.js</strong> e agora vamos mudar para <strong>locastyle-0.32.0.js</strong>. Tanto para JS quanto para CSS.</p>
-
-<h4 id='minor_bug_fixes'>Minor bug fixes</h4>
-
-<p>Colocando em ordem algumas coisas, acertando alguns bugs. Nada muito de outro mundo, apenas retalhos para alguns serviços da Locaweb funcionarem melhor.</p>
-	</article>
-	<hr>
 
 	<div class="paginate">
 		
@@ -405,7 +385,11 @@ $(".customSelect").select2({
 		<h2>Recentes</h2>
 		<ul>
 			
+				<li><a href="/locawebstyle-v1/changelog/2014/02/10/versao_1-2-17/">Versão 1.2.17</a></li>
+			
 				<li><a href="/locawebstyle-v1/changelog/2014/01/28/versao_1-2-16/">versao_1.2.16</a></li>
+			
+				<li><a href="/locawebstyle-v1/changelog/2013/12/13/versao_1-2-15/">Versão 1.2.15</a></li>
 			
 				<li><a href="/locawebstyle-v1/changelog/2013/04/12/versao_1-0-1/">Versão 1.0.1</a></li>
 			
@@ -420,10 +404,6 @@ $(".customSelect").select2({
 				<li><a href="/locawebstyle-v1/changelog/2013/01/18/versao_0-38-0/">Versão 0.38.0</a></li>
 			
 				<li><a href="/locawebstyle-v1/changelog/2013/01/14/versao_0-36-0/">Versão 0.36.0</a></li>
-			
-				<li><a href="/locawebstyle-v1/changelog/2012/12/19/versao_0-34-0/">Versão 0.34.0</a></li>
-			
-				<li><a href="/locawebstyle-v1/changelog/2012/12/11/versao_0-32-0/">Versão 0.32.0</a></li>
 			
 		</ul>
 	</nav>
