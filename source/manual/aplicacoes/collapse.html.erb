@@ -12,152 +12,87 @@ menu_page: sidebar-aplicacoes.erb
 
 	<p>Collapses são usados para organizar grandes quantidades de conteúdo que trazem uma informação ou comportamentos do sistema para a interação com o usuário. Veja os exemplos abaixo:</p>
 
+
 	<h3>Collapses complexos</h3>
 	<p>Geralmente estes collapses são utilizados para conter grandes quantidades de informação, formulários e etc. São usados em telas de configurações ou onde precisamos seccionar muita informação referente a um mesmo assunto.</p>
 	<div class="example">
-		
-		<div class="accordion" id="nomeGrupoAccordion">
-		  
-		  <div class="boxCollapse accordion-group accordion-heading">
-		    <header class="noMarginBottom">
-		    	<h4>Passo 1</h4>
-					<p>Descrição passo 1</p>
-		    </header>
-		    <div id="passo1" class="accordion-body collapse in">
-		    		<p>
-		        	Instruções Passo 1
-		    		</p>
-		    		<div class="btn-group">
-			      	<button class="btn btn-primary accordion-toggle dInlineBlock" data-toggle="collapse" data-parent="#nomeGrupoAccordion" href="#passo2">Ir para o passo 2 </button>
-		    		</div>
-		      	<br>
-		    </div>
-		  </div>
-		  
-		  <div class="boxCollapse accordion-group accordion-heading">
-		    <header class="noMarginBottom">
-		    	<h4>Passo 2</h4>
-					<p>Descrição passo 2</p>
-		    </header>
-		    <div id="passo2" class="accordion-body collapse">
-		      <p>
-		      	Instruções passo 2
-		      </p>
-		      <div class="btn-group">
-			      <button class="btn accordion-toggle dInlineBlock" data-toggle="collapse" data-parent="#nomeGrupoAccordion" href="#passo1"> Voltar para o passo 1 </button><button class="btn btn-primary accordion-toggle dInlineBlock" data-toggle="collapse" data-parent="#nomeGrupoAccordion" href="#passo3"> Ir para o passo 3 </button>
-		    	</div>
-		    </div>
-		  </div>
-
-		  <div class="boxCollapse accordion-group accordion-heading">
-		    <header class="noMarginBottom">
-		    	<h4>Passo 3</h4>
-					<p>Descrição passo 3</p>
-		    </header>
-		    <div id="passo3" class="accordion-body collapse">
-		      <p>
-		      	Instruções passo 3
-		      </p>
-		      <div class="btn-group">
-			      <button class="btn accordion-toggle dInlineBlock" data-toggle="collapse" data-parent="#nomeGrupoAccordion" href="#passo2">Voltar para o passo 2 </button>
-		    	</div>
-		    </div>
-		  </div>
-
-		</div>
-
-		<hr>
-
 	  <div class="boxCollapse">
-			<header data-target="#addMotivo" data-toggle="collapse" class="collapsed">
-				<h4>Motivos de descadastramento</h4>
-				<p>Você pode editar os já cadastrados ou pode criar novos motivos para a sua lista.</p>
-			</header>
-			<div id="addMotivo" class="collapse">
-				<div class="boxCinzaInner">
-					<form>
-						<div class="control-group">
-							<label for="unsubscribe_reason_create" class="required control-label">Adicione um motivo <b>*</b></label><input type="text" name="unsubscribe_reason[name]" id="unsubscribe_reason_create" class="span5">
-							<input type="submit" value="Adicionar" class="btn btn-primary">
-						</div>
-					</form>
-				</div>
-
-				<h6>Motivos adicionados</h6>
-				<table class="tableList">
-					<thead>
-						<tr>
-							<th class="txtLeft">Motivo</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="txtLeft">
-								Lorem Ipsum dolor sit amet
-								<ul class="actionsTable">
-									<li><a data-disable="edit" class="ico-pencil" href="#edit">Editar</a></li>
-									<li><a data-toggle="modal" data-target="#deleteModal" class="ico-trash" href="#">Excluir</a></li>
-								</ul>
-								<div id="deleteModal" class="modal modalCenter modalSmall fade">
-									<div class="modal-header">
-										<a data-dismiss="modal" class="close">×</a>
-										<h3>Um título qualquer</h3>
-									</div>
-
-									<div class="modal-body">
-										<h2 class="titAlert">Aqui é um título do alerta</h2>
-										<p>Aqui vai a mensagem de alerta, aviso, notificação ou qualquer outro aviso que você deseja aplicar.</p>
-									</div>
-
-									<div class="modal-footer">
-										<a data-method="delete" class="btn btn-primary" href="#">sim</a>
-										<a data-dismiss="modal" class="btn" href="#">Não tenho certeza</a>
-									</div>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td class="txtLeft">
-								Consectuer dip alet Lorem Ipsum
-								<ul class="actionsTable">
-									<li><a data-disable="edit" class="ico-pencil" href="#edit">Editar</a></li>
-									<li><a data-toggle="modal" data-target="#deleteModal" class="ico-trash" href="#">Excluir</a></li>
-								</ul>
-								<div id="deleteModal" class="modal modalCenter modalSmall fade">
-									<div class="modal-header">
-										<a data-dismiss="modal" class="close">×</a>
-										<h3>Um título qualquer</h3>
-									</div>
-
-									<div class="modal-body">
-										<h2 class="titAlert">Aqui é um título do alerta</h2>
-										<p>Aqui vai a mensagem de alerta, aviso, notificação ou qualquer outro aviso que você deseja aplicar.</p>
-									</div>
-
-									<div class="modal-footer">
-										<a data-method="delete" class="btn btn-primary" href="#">sim</a>
-										<a data-dismiss="modal" class="btn" href="#">Não tenho certeza</a>
-									</div>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<button class="btn btn-primary" data-target="#outroCollapse" data-toggle="collapse" type="button">Próxima etapa</button>
+		<header data-target="#addMotivo" data-toggle="collapse" class="collapsed">
+			<h4>Motivos de descadastramento</h4>
+			<p>Você pode editar os já cadastrados ou pode criar novos motivos para a sua lista.</p>
+		</header>
+		<div id="addMotivo" class="collapse">
+			<div class="boxCinzaInner">
+				<form>
+					<div class="control-group">
+						<label for="unsubscribe_reason_create" class="required control-label">Adicione um motivo <b>*</b></label><input type="text" name="unsubscribe_reason[name]" id="unsubscribe_reason_create" class="span5">
+						<input type="submit" value="Adicionar" class="btn btn-primary">
+					</div>
+				</form>
 			</div>
+
+			<h6>Motivos adicionados</h6>
+			<table class="tableList">
+				<thead>
+					<tr>
+						<th class="txtLeft">Motivo</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="txtLeft">
+							Lorem Ipsum dolor sit amet
+							<ul class="actionsTable">
+								<li><a data-disable="edit" class="ico-pencil" href="#edit">Editar</a></li>
+								<li><a data-toggle="modal" data-target="#deleteModal" class="ico-trash" href="#">Excluir</a></li>
+							</ul>
+							<div id="deleteModal" class="modal modalCenter modalSmall fade">
+								<div class="modal-header">
+									<a data-dismiss="modal" class="close">×</a>
+									<h3>Um título qualquer</h3>
+								</div>
+
+								<div class="modal-body">
+									<h2 class="titAlert">Aqui é um título do alerta</h2>
+									<p>Aqui vai a mensagem de alerta, aviso, notificação ou qualquer outro aviso que você deseja aplicar.</p>
+								</div>
+
+								<div class="modal-footer">
+									<a data-method="delete" class="btn btn-primary" href="#">sim</a>
+									<a data-dismiss="modal" class="btn" href="#">Não tenho certeza</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="txtLeft">
+							Consectuer dip alet Lorem Ipsum
+							<ul class="actionsTable">
+								<li><a data-disable="edit" class="ico-pencil" href="#edit">Editar</a></li>
+								<li><a data-toggle="modal" data-target="#deleteModal" class="ico-trash" href="#">Excluir</a></li>
+							</ul>
+							<div id="deleteModal" class="modal modalCenter modalSmall fade">
+								<div class="modal-header">
+									<a data-dismiss="modal" class="close">×</a>
+									<h3>Um título qualquer</h3>
+								</div>
+
+								<div class="modal-body">
+									<h2 class="titAlert">Aqui é um título do alerta</h2>
+									<p>Aqui vai a mensagem de alerta, aviso, notificação ou qualquer outro aviso que você deseja aplicar.</p>
+								</div>
+
+								<div class="modal-footer">
+									<a data-method="delete" class="btn btn-primary" href="#">sim</a>
+									<a data-dismiss="modal" class="btn" href="#">Não tenho certeza</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	  </div>
-	  <div class="boxCollapse">
-			<header data-target="#outroCollapse" data-toggle="collapse" class="collapsed">
-				<h4>Informações adicionais</h4>
-				<p>Comentários e outras informações.</p>
-			</header>
-			<div id="outroCollapse" class="collapse">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, esse perspiciatis debitis iste ducimus itaque molestias at ipsam doloremque minus. Assumenda recusandae culpa soluta praesentium quidem voluptatum repellendus laborum excepturi.
-				</p>
-			<button class="btn btn-primary" data-target="#addMotivo" data-toggle="collapse" type="button">Etapa Anterior</button>
-			</div>
-		</div>
 	</div>
 
 	<h3>Collapses simples</h3>
@@ -236,6 +171,72 @@ menu_page: sidebar-aplicacoes.erb
 </pre>
 
 
+	<h2>Collapse com navegação</h2>
+	<div class="accordion" id="nomeGrupoAccordion">
+		<div class="boxCollapse accordion-group accordion-heading">
+			<header class="noMarginBottom">
+				<h4>Passo 1</h4>
+				<p>Descrição passo 1</p>
+			</header>
+			<div id="passo1" class="accordion-body collapse in">
+				<p>
+					Instruções Passo 1
+				</p>
+				<div class="btn-group">
+					<button class="btn btn-primary accordion-toggle dInlineBlock" data-toggle="collapse" data-parent="#nomeGrupoAccordion" href="#passo2">Ir para o passo 2 </button>
+				</div>
+				<br>
+			</div>
+		</div>
+
+		<div class="boxCollapse accordion-group accordion-heading">
+			<header class="noMarginBottom">
+				<h4>Passo 2</h4>
+				<p>Descrição passo 2</p>
+			</header>
+			<div id="passo2" class="accordion-body collapse">
+				<p>
+					Instruções passo 2
+				</p>
+				<div class="btn-group">
+					<button class="btn accordion-toggle dInlineBlock" data-toggle="collapse" data-parent="#nomeGrupoAccordion" href="#passo1"> Voltar para o passo 1 </button><button class="btn btn-primary accordion-toggle dInlineBlock" data-toggle="collapse" data-parent="#nomeGrupoAccordion" href="#passo3"> Ir para o passo 3 </button>
+				</div>
+			</div>
+		</div>
+
+		<div class="boxCollapse accordion-group accordion-heading">
+			<header class="noMarginBottom">
+				<h4>Passo 3</h4>
+				<p>Descrição passo 3</p>
+			</header>
+			<div id="passo3" class="accordion-body collapse">
+				<p>
+					Instruções passo 3
+				</p>
+				<div class="btn-group">
+					<button class="btn accordion-toggle dInlineBlock" data-toggle="collapse" data-parent="#nomeGrupoAccordion" href="#passo2">Voltar para o passo 2 </button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <h2 id="collapseDesativado">Collapse Desativado</h2>
+  <p>Basta remover os atributos e classes da tag <code>header</code></p>
+  <div class="boxCollapse inactive">
+    <header>
+      <h4>Collapse apenas com o título</h4>
+    </header>
+    <div id="addMotivo" class="collapse in">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+        <a data-content="Aqui vai um conteúdo maravilhoso para o popover... aceita <b>HTML</b> também" rel="popover" data-html="true" data-container="body" class="infoBubble" data-original-title="Exemplo de Popover"></a>
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
 	<h2>Utilização</h2>
 	<p>Apenas coloque <strong>data-toggle="collapse"</strong> e o <strong>data-target</strong> para dar o controle de um elemento com collapse. Lembre-se de colocar a classe <strong>collapse</strong> para o elemento que terá o collapse. Se você quiser um determinado collapse já apareça aberto, insira a classe <strong>in</strong>.</p>
 
@@ -243,11 +244,7 @@ menu_page: sidebar-aplicacoes.erb
 
 	<p>Se quiser ativar manualmente, utilize o código abaixo:</p>
 
-	<pre class="lang-javascript prettyprint linenums">
-	$(".collapse").collapse();
-	</pre>
-
-	<p>Para inserir navegaçao dentro de <code>.collapseGroup</code> utilize os atributos normalmente utilizadas no header de um collapse <code>data-target="#id-do-collapse" data-toggle="collapse"</code> para atibvar o comportamento abre/fecha por outro elemento, ou adicione o atributo <code>data-collapse-nav="#id-do-collapse"</code> para fechar todos e abrir o collapse com <b>id</b> configurado nesse atributo.</p>
+	<pre class="lang-javascript prettyprint linenums">$(".collapse").collapse();</pre>
 
 	<h3>Eventos</h3>
 	<table class="table table-bordered table-striped">
