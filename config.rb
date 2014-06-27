@@ -82,7 +82,7 @@ end
 ####
 set :only_assets, "http://assets.locaweb.com.br/locastyle/edge.zip"
 set :download_github, "https://github.com/locaweb/locawebstyle/archive/master.zip"
-set :stable, "1.1.9"
+set :stable, "1.2.22"
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
