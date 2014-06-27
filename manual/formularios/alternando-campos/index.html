@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>Acessibilidade - Link direto para conteúdo - Guia de estilos da Locaweb</title>
+  <title>Formulários - Alternando campos - Guia de estilos da Locaweb</title>
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
@@ -11,7 +11,7 @@
   <link href="../../../assets/stylesheets/manual.css" rel="stylesheet" type="text/css" />
 
 </head>
-<body class="manual manual_acessibilidade manual_acessibilidade_link-content manual_acessibilidade_link-content_index">
+<body class="manual manual_formularios manual_formularios_alternando-campos manual_formularios_alternando-campos_index">
 
 <!-- topbar header -->
 <header id="topbar" class="clearfix">
@@ -53,14 +53,17 @@
     </div>
 
 	<aside class="sidebar">
-	<!-- Menu de Informações Iniciais -->
+	<!-- Menu de Formulários -->
 <nav>
 	<h1>Informações</h1>
 	<ul>
-		<li><a href="/locawebstyle-v1/manual/acessibilidade/tabindex">Tabindex</a></li>
-		<li><a href="/locawebstyle-v1/manual/acessibilidade/menu-escondido">Menu escondido</a></li>
-		<li><a href="/locawebstyle-v1/manual/acessibilidade/wai-aria">WAI-ARIA</a></li>
-		<li><a href="/locawebstyle-v1/manual/acessibilidade/link-content">Link ir direto para o conteúdo</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/campos">Campos</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/mascaras-forms">Máscaras de formulários</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/validacoes">Indicando as validações</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/calendarios">Calendários</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/selects">Customizando os selects</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/medidor-senhas">Medidor de senha</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/alternando-campos">Alternando campos</a></li>
 	</ul>
 </nav>
 
@@ -69,20 +72,67 @@
 
 	<article class="text">
 	<header>
-	  <h1>Link direto para conteúdo</h1>
-	  <h3>Inserindo link direto para o conteúdo importante da página</h3>
+		<h1>Alternando campos</h1>
+		<h3>Exibindo conteúdo do campo de senha</h3>
 	</header>
-	<p>Link acessível para ir direto ao seu conteúdo, com isso o usuário tem essa facilidade utilizando somente o teclado e/ou o leitor de tela.
 
-	<p>O link abaixo deve ser implementado antes de qualquer outro link, já que ele ficará oculto e será exibido apenas ao receber foco do teclado</p>
+  <p>Para ativar essa funcionalidade o elemento precisa possuir a classe <code>togglePass</code> e receber o atributo data-target com o mesmo valor do ID do input que será alternado seu tipo de password/text.</p>
 
-	<p>Ex: <code>&lt;a href="#" tabindex="1" class="lnkContent"&gt;Ir para o conteúdo&lt;/a&gt;</code></p>
+  <div class="example">
+    <div class="control-group">
+      <label class="noMarginBottom" for="user_password">Nova senha</label>
+      <p>Senha entre 8 a 14 caracteres, contendo letras e números</p>
+      <div class="input-append">
+        <input class="span3" id="account-password" type="password">
+        <a href="#" tabindex="3" class="add-on togglePass ico-eye" data-classtoggle="ico-eye,ico-eye-off" data-target="#account-password"></a>
+      </div>
+    </div>
+  </div>
+<pre class="lang-html prettyprint linenums">
+&lt;div class="example"&gt;
+  &lt;div class="control-group"&gt;
+    &lt;label class="noMarginBottom" for="user_password"&gt;Nova senha&lt;/label&gt;
+    &lt;p&gt;Senha entre 8 a 14 caracteres, contendo letras e números&lt;/p&gt;
+    &lt;div class="input-append"&gt;
+      &lt;input class="span3" id="account-password" type="password"&gt;
+      &lt;a href="#" tabindex="3" class="add-on togglePass ico-eye" data-classtoggle="ico-eye,ico-eye-off" data-target="#account-password"&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 
-	<p>É necessário que o título (de conteúdo) de todas as páginas possua a classe: "titleContent"</p>
-	<p>Obs: é necessário apenas a implementação dessa classe em um título por página.</p>
+  <h3>Com força de senha</h3>
+  <div class="example">
+    <div class="control-group">
+      <label class="noMarginBottom" for="user_password">Nova senha</label>
+      <p>Senha entre 8 a 14 caracteres, contendo letras e números</p>
+      <div class="input-append fLeft">
+        <input class="span3" id="account-password2" data-component="password-strength" data-monitor-id="password-strength-monitor-2" type="password">
+        <a href="#" tabindex="3" class="add-on togglePass ico-eye" data-classtoggle="ico-eye,ico-eye-off" data-target="#account-password2"></a>
+      </div>
+      <div class="password-strength">
+        <p>Força da senha:</p>
+        <div id="password-strength-monitor-2" class="monitor"></div>
+      </div>
+    </div>
+  </div>
+<pre class="lang-html prettyprint linenums">
+&lt;div class="control-group"&gt;
+  &lt;label class="noMarginBottom" for="user_password"&gt;Nova senha&lt;/label&gt;
+  &lt;p&gt;Senha entre 8 a 14 caracteres, contendo letras e números&lt;/p&gt;
+  &lt;div class="input-append fLeft"&gt;
+    &lt;input class="span3" id="account-password2" data-component="password-strength" data-monitor-id="password-strength-monitor-2" type="password"&gt;
+    &lt;a href="#" tabindex="3" class="add-on togglePass ico-eye" data-classtoggle="ico-eye,ico-eye-off" data-target="#account-password2"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="password-strength"&gt;
+    &lt;p&gt;Força da senha:&lt;/p&gt;
+    &lt;div id="password-strength-monitor-2" class="monitor"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 
-	<pre class="lang-html prettyprint linenums">&lt;h1 class="titleContent"&gt;Cadastrar cliente &lt;/h1&gt;</pre>
 </article>
+
 </section>
 <!-- END post content -->
 

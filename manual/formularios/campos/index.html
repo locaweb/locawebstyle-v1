@@ -7,8 +7,8 @@
   <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" type="text/css" href="/locawebstyle-v1/assets/bootstrap/css/bootstrap.css">
-  <link href="../../../assets/stylesheets/locastyle.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="../../../assets/stylesheets/manual.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../../../assets/stylesheets/locastyle.css" rel="stylesheet" type="text/css" />
+  <link href="../../../assets/stylesheets/manual.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body class="manual manual_formularios manual_formularios_campos manual_formularios_campos_index">
@@ -25,6 +25,8 @@
   </div>
 </header>
 <!-- END topbar header -->
+
+
 <!-- highlight -->
 <div class="highlight heading">
 	<div class="limit">
@@ -42,7 +44,7 @@
           <li><a href="/locawebstyle-v1/manual/introducao/como-usar">Introdução</a></li>
           <li><a href="/locawebstyle-v1/manual/componentes/abas">Componentes</a></li>
           <li><a href="/locawebstyle-v1/manual/formularios/campos">Formulários</a></li>
-          <li><a href="/locawebstyle-v1/manual/aplicacoes/busca-avancada">Aplicações</a></li>
+          <li><a href="/locawebstyle-v1/manual/aplicacoes/box-com-colunas">Aplicações</a></li>
           <li><a href="/locawebstyle-v1/manual/layout/cores-principais">Layout</a></li>
           <li><a href="/locawebstyle-v1/manual/acessibilidade/tabindex">Acessibilidade</a></li>
           <li><a href="/locawebstyle-v1/manual/elementos">Cartilha de Elementos</a></li>
@@ -55,13 +57,13 @@
 <nav>
 	<h1>Informações</h1>
 	<ul>
-      	<li><a href="/locawebstyle-v1/manual/formularios/campos">Campos</a></li>
-      	<li><a href="/locawebstyle-v1/manual/formularios/mascaras-forms">Máscaras de formulários</a></li>
-      	<li><a href="/locawebstyle-v1/manual/formularios/validacoes">Indicando as validações</a></li>
-      	<li><a href="/locawebstyle-v1/manual/formularios/calendarios">Calendários</a></li>
-      	<li><a href="/locawebstyle-v1/manual/formularios/selects">Customizando os selects</a></li>
-        <li><a href="/locawebstyle-v1/manual/formularios/medidor-senhas">Medidor de senha</a></li>
-      	<li><a href="/locawebstyle-v1/manual/formularios/passo-a-passo">Formulários em steps</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/campos">Campos</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/mascaras-forms">Máscaras de formulários</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/validacoes">Indicando as validações</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/calendarios">Calendários</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/selects">Customizando os selects</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/medidor-senhas">Medidor de senha</a></li>
+		<li><a href="/locawebstyle-v1/manual/formularios/alternando-campos">Alternando campos</a></li>
 	</ul>
 </nav>
 
@@ -89,8 +91,9 @@
 
 				<div class="period control-group fRight">
 					<label for="period">Período:</label>
-					<input type="text" name="list[period_start]" id="list_period_start" class="input120 datepicker datemask hasDatepicker"><button class="ui-datepicker-trigger icon-calendar" type="button"></button> à
-					<input type="text" name="list[period_end]" id="list_period_end" class="input120 datepicker datemask hasDatepicker"><button class="ui-datepicker-trigger icon-calendar" type="button"></button>
+					<input type="text" name="list[period_start]" id="list_period_start" class="input-small datemask datepicker">
+
+					<input type="text" name="list[period_end]" id="list_period_end" class="input-small datepicker datemask ">
 					<input type="submit" class="btn" value="Filtrar" name="">
 				</div>
 			</form>
@@ -101,10 +104,12 @@
 &lt;div class="simpleFilter sideBySide formInline"&gt;
 	&lt;a href="#" class="btn btn-primary ico-plus fLeft"&gt;Criar nova lista&lt;/a&gt;
 	&lt;form class="fRight"&gt;
-		&lt;div class="control-group"&gt;
-			&lt;label&gt;Buscar&lt;/label&gt;
-			&lt;input type="text" placeholder="Buscar pelo nome"&gt;
-			&lt;input type="submit" value="Buscar" class="btn"&gt;
+		&lt;div class="period control-group fRight"&gt;
+			&lt;label for="period"&gt;Período:&lt;/label&gt;
+			&lt;input type="text" name="list[period_start]" id="list_period_start" class="input-small datemask datepicker"&gt;
+
+			&lt;input type="text" name="list[period_end]" id="list_period_end" class="input-small datepicker datemask "&gt;
+			&lt;input type="submit" class="btn" value="Filtrar" name=""&gt;
 		&lt;/div&gt;
 	&lt;/form&gt;
 &lt;/div&gt;
@@ -147,7 +152,7 @@
 			<span class="add-on">.00</span>
 		</div>
 	</div>
-	
+
 <pre class="lang-html prettyprint linenums">
 &lt;div class="input-prepend"&gt;
 	&lt;span class="add-on"&gt;@&lt;/span&gt;
@@ -162,42 +167,63 @@
 	<p>Insere uma classe <strong>.add-on</strong> no elemento, formatando-o de forma que ele fique acomplado ao campo.</p>
 
 	<div class="example">
-		<div class="control-group">
+		<p>OBS: O último elemento fecha todos e não exibe nada, pra isso basta inserir a classe <code>.closeAllCollapse</code>, o elemento não pode possuir o atributo <code>data-toggle="collapse"</code>, isso é usado apenas em algumas exceções.</p>
+		<div class="control-group collapsedRadios">
 			<label>Tipo de autenticação:</label>
 			<div class="controls">
 				<label class="control-label">
-					<input type="radio" name="r1" data-target="#authOpt" data-toggle="show" checked="checked"> Autenticado
+					<input type="radio" data-target="#authOpt" name="control" data-toggle="collapse" checked="checked"> Tipo checados
 				</label>
 				<label class="control-label">
-					<input type="radio" name="r1" data-target="#authOpt" data-toggle="hide"> Não autenticado
+					<input type="radio" data-target="#authOpt2" name="control" data-toggle="collapse"> Tipo texto
 				</label>
-				<div id="authOpt" class="collapse">
+				<label class="control-label">
+					<input type="radio" data-target="#authOpt3" class="closeAllCollapse" name="control"> Nenhum tipo
+				</label>
+				<div id="authOpt" class="collapse in">
 					<div class="boxGrayOpt formInline">
 						<label><input type="checkbox" value="1"> CPF</label>
 						<label><input type="checkbox" value="1"> Endereço</label>
 						<label><input type="checkbox" value="1"> CEP</label>
 					</div>
 				</div>
+				<div id="authOpt2" class="collapse">
+					<div class="boxGrayOpt formInline">
+						<input type="text" class="span5">
+					</div>
+				</div>
+				<div id="authOpt3" class="collapse">
+				</div>
 			</div>
 		</div>
 	</div>
 
 <pre class="lang-html prettyprint linenums">
-&lt;div class="control-group"&gt;
+&lt;div class="control-group collapsedRadios"&gt;
 	&lt;label&gt;Tipo de autenticação:&lt;/label&gt;
-		&lt;div class="controls"&gt;
-			&lt;label class="control-label"&gt;
-				&lt;input type="radio" data-target="#authOpt" data-toggle="show" checked="checked"&gt; Autenticado
-			&lt;/label&gt;
-			&lt;label class="control-label"&gt;
-				&lt;input type="radio" data-target="#authOpt" data-toggle="hide"&gt; Não autenticado
-			&lt;/label&gt;
-			&lt;div id="authOpt" class="collapse"&gt;
-				&lt;div class="boxGrayOpt formInline"&gt;
-					&lt;label&gt;&lt;input type="checkbox" value="1"&gt; CPF&lt;/label&gt;
-					&lt;label&gt;&lt;input type="checkbox" value="1"&gt; Endereço&lt;/label&gt;
-					&lt;label&gt;&lt;input type="checkbox" value="1"&gt; CEP&lt;/label&gt;
+	&lt;div class="controls"&gt;
+		&lt;label class="control-label"&gt;
+			&lt;input type="radio" data-target="#authOpt" name="control" data-toggle="collapse" checked="checked"&gt; Tipo checados
+		&lt;/label&gt;
+		&lt;label class="control-label"&gt;
+			&lt;input type="radio" data-target="#authOpt2" name="control" data-toggle="collapse"&gt; Tipo texto
+		&lt;/label&gt;
+		&lt;label class="control-label"&gt;
+					&lt;input type="radio" data-target="#authOpt3" class="closeAllCollapse" name="control"&gt; Nenhum tipo
+				&lt;/label&gt;
+		&lt;div id="authOpt" class="collapse in"&gt;
+			&lt;div class="boxGrayOpt formInline"&gt;
+				&lt;label&gt;&lt;input type="checkbox" value="1"&gt; CPF&lt;/label&gt;
+				&lt;label&gt;&lt;input type="checkbox" value="1"&gt; Endereço&lt;/label&gt;
+				&lt;label&gt;&lt;input type="checkbox" value="1"&gt; CEP&lt;/label&gt;
 			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id="authOpt2" class="collapse"&gt;
+			&lt;div class="boxGrayOpt formInline"&gt;
+				&lt;input type="text" class="span5"&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id="authOpt3" class="collapse"&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
@@ -216,6 +242,7 @@
 
 	<p>Para ver o padrão de como os campos ficam com validação de erro ou sucesso, <a href="http://developer.locaweb.com.br/locawebstyle/formularios/indicando-as-validacoes/" title="Indicando as validações">clique aqui</a>.</p>
 </article>
+
 </section>
 <!-- END post content -->
 
@@ -287,11 +314,10 @@
 
 </script>
 
-  <script src="../../../assets/javascripts/libs.js" type="text/javascript"></script>
-<script src="../../../assets/javascripts/locastyle.js" type="text/javascript"></script>
-<script src="../../../assets/javascripts/manual.js" type="text/javascript"></script>
+  <script src="../../../assets/javascripts/libs.js" type="text/javascript"></script><script src="../../../assets/javascripts/locastyle.js" type="text/javascript"></script><script src="../../../assets/javascripts/manual.js" type="text/javascript"></script>
   <script src="/locawebstyle-v1/assets/bootstrap/js/bootstrap.js"></script>
   <script src="/locawebstyle-v1/assets/prettify/prettify.js"></script>
 
 </body>
 </html>
+
