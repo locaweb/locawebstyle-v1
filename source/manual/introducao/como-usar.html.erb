@@ -36,19 +36,12 @@ menu_page: sidebar-informacoes-iniciais.erb
 
 <pre class="lang-html prettyprint linenums">
 /** no header **/
-&lt;link rel="stylesheet" href="//assets.locaweb.com.br/locastyle/<%= settings.stable %>/locastyle.css"&gt;
-&lt;link rel="stylesheet" href="//assets.locaweb.com.br/locastyle/<%= settings.stable %>/bootstrap.css"&gt;
+&lt;link rel="stylesheet" href="//assets.locaweb.com.br/locastyle/<%= settings.stable %>/bootstrap/css/bootstrap.css"&gt;
+&lt;link rel="stylesheet" href="//assets.locaweb.com.br/locastyle/<%= settings.stable %>/stylesheets/locastyle.css"&gt;
 
 /** no footer **/
-&lt;script type=&quot;text/javascript&quot; src=&quot;//assets.locaweb.com.br/locastyle/<%= settings.stable %>/locastyle.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;//assets.locaweb.com.br/locastyle/<%= settings.stable %>/bootstrap.js&quot;&gt;&lt;/script&gt;
-</pre>
-
-	<p>Se você quiser utilizar sempre a versão mais atual, use os caminhos dos assets sem a versão travada:</p>
-
-<pre class="lang-html prettyprint linenums">
-&lt;link rel="stylesheet" href="http://assets.locaweb.com.br/locastyle/edge/stylesheets/locastyle.css"&gt;
-&lt;script type="text/javascript" src="http://assets.locaweb.com.br/locastyle/edge/javascripts/locastyle.js"&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//assets.locaweb.com.br/locastyle/<%= settings.stable %>/javascripts/locastyle.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//assets.locaweb.com.br/locastyle/<%= settings.stable %>/bootstrap/js/bootstrap.js&quot;&gt;&lt;/script&gt;
 </pre>
 
 	<div class="alert">
@@ -74,24 +67,23 @@ menu_page: sidebar-informacoes-iniciais.erb
 	  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
 
 	  &lt;!-- CSS do Bootstrap --&gt;
-	  &lt;link href=&quot;//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css&quot;&gt;
+	  &lt;link href=&quot;http://assets.locaweb.com.br/locastyle/<%= settings.stable %>/bootstrap/css/bootstrap.css&quot;&gt;
 	  &lt;!-- CSS do Locaweb Style --&gt;
-	  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://developer.locaweb.com.br/assets/edge/locastyle.css&quot;&gt;
+	  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://assets.locaweb.com.br/locastyle/<%= settings.stable %>/stylesheets/locastyle.css&quot;&gt;
 	&lt;/head&gt;
 
 	&lt;body&gt;
 	 &lt;h1&gt;Ol&aacute;, Mund&atilde;o!&lt;/h1&gt;
 
-	  &lt;!-- jQuery &eacute; obrigat&oacute;rio --&gt;
-	  &lt;script src=&quot;http://code.jquery.com/jquery.js&quot;&gt;&lt;/script&gt;
-	  &lt;!-- Obrigat&oacute;rio o Bootstrap (aconselhamos usar sempre a &uacute;ltima) --&gt;
-	  &lt;script src=&quot;//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-	  &lt;!-- Javascript do Locaweb Style --&gt;
-	  &lt;script type=&quot;text/javascript&quot; src=&quot;http://developer.locaweb.com.br/assets/edge/locastyle.js&quot;&gt;&lt;/script&gt;
 
+	  &lt;!-- Javascript do Locaweb Style --&gt;
+	  &lt;script src=&quot;http://assets.locaweb.com.br/locastyle/<%= settings.stable %>/javascripts/locastyle.js&quot;&gt;&lt;/script&gt;
+	  &lt;!-- Javascript do Bootstrap --&gt;
+	  &lt;script type=&quot;text/javascript&quot; src=&quot;http://assets.locaweb.com.br/locastyle/<%= settings.stable %>/bootstrap/js/bootstrap.js&quot;&gt;&lt;/script&gt;
 	&lt;/body&gt;
 &lt;/html&gt;
 </pre>
 
 
 </article>
+
