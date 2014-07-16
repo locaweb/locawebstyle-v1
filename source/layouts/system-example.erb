@@ -23,14 +23,35 @@
 
 	<menu id="menuPrincipal" role="navigation">
 		<ul>
-			<li class="selected"><a href="/" class="ico-home" tabindex="2" role="menuitem">Página inicial</a></li>
-			<li><a href="/panel/lists" tabindex="2" role="menuitem">Listas de contatos</a></li>
-			<li><a href="/panel/messages" tabindex="2" role="menuitem">Mensagens</a></li>
-			<li><a href="/panel/campaigns" tabindex="2" role="menuitem">Campanhas</a></li>
-			<li><a href="/panel/template_defaults" tabindex="2" role="menuitem">Templates</a></li>
-			<li><a href="/panel/reports" tabindex="2" role="menuitem">Relatórios</a></li>
-			<li><a href="/panel/forms" tabindex="2" role="menuitem">Formulários</a></li>
-			<li><a href="/panel/settings" tabindex="2" role="menuitem">Configurações</a></li>
+			<li class="parent">
+				<a href="#" class="ico-home" tabindex="2" role="menuitem">Página inicial</a>
+				<ul>
+					<li><a href="#" tabindex="2" role="menuitem">Submenu 1</a></li>
+					<li><a href="#" tabindex="2" role="menuitem">Submenu 1</a></li>
+					<li><a href="#" tabindex="2" role="menuitem">Submenu 1</a></li>
+				</ul>
+			</li>
+			<li class="selected parent"><a href="/panel/lists" tabindex="2" role="menuitem">
+				Listas de contatos</a>
+				<ul>
+					<li><a href="#" tabindex="2" role="menuitem">Submenu 2</a></li>
+					<li><a href="#" tabindex="2" role="menuitem">Submenu 2</a></li>
+					<li><a href="#" tabindex="2" role="menuitem">Submenu 2</a></li>
+				</ul>
+			</li>
+			<li class="parent">
+				<a href="#" tabindex="2" role="menuitem">Mensagens</a>
+				<ul>
+					<li><a href="#" tabindex="2" role="menuitem">Submenu 3</a></li>
+					<li><a href="#" tabindex="2" role="menuitem">Submenu 3</a></li>
+					<li><a href="#" tabindex="2" role="menuitem">Submenu 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#" tabindex="2" role="menuitem">Campanhas</a></li>
+			<li><a href="#" tabindex="2" role="menuitem">Templates</a></li>
+			<li><a href="#" tabindex="2" role="menuitem">Relatórios</a></li>
+			<li><a href="#" tabindex="2" role="menuitem">Formulários</a></li>
+			<li><a href="#" tabindex="2" role="menuitem">Configurações</a></li>
 		</ul>
 	</menu>
 </header>
@@ -63,5 +84,10 @@
 	    </div>
 	</footer>
 </div>
+
+
+	<script src="//assets.locaweb.com.br/locastyle/<%= stable %>/javascripts/libs.js"></script>
+	<%= javascript_include_tag "locastyle" %>
+	<script src="//assets.locaweb.com.br/locastyle/<%= stable %>/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
