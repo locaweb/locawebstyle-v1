@@ -1,0 +1,10 @@
+---
+title: Versão 1.2.23
+date: 2014-07-16 17:25 UTC
+tags:
+---
+
+
+**O que tem de novo?**
+
+\- 3 novas imagens. <img src="http://assets.locaweb.com.br/locastyle/1.2.23/images/bd/mysql_28.png" alt="logo Mysql"> <img src="http://assets.locaweb.com.br/locastyle/1.2.23/images/bd/mssql_28.png" alt="Logo mssql"> <img src="http://assets.locaweb.com.br/locastyle/1.2.23/images/bd/postgre_28.png" alt="logo postgres">

@@ -1,0 +1,11 @@
+---
+title: Versão 1.2.20
+date: 2014-07-16 17:22 UTC
+tags:
+---
+
+
+**Ajustes**
+
+\- Corrigido as fonts no firefox do mac e também melhorado a chamadas das fontes no formato SVG.
+
