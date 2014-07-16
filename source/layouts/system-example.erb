@@ -86,8 +86,7 @@
 </div>
 
 
-	<script src="//assets.locaweb.com.br/locastyle/<%= stable %>/javascripts/libs.js"></script>
-	<%= javascript_include_tag "locastyle" %>
-	<script src="//assets.locaweb.com.br/locastyle/<%= stable %>/bootstrap/js/bootstrap.js"></script>
+  <%= javascript_include_tag "libs", "locastyle" %>
+  <script src="<%= base_url + bootstrap_js %>"></script>
 </body>
 </html>
