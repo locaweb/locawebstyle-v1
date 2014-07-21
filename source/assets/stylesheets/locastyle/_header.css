@@ -137,7 +137,11 @@
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-#menuPrincipal > ul > li.selected > a:hover{color: #fff;}
+#menuPrincipal > ul > li.selected > a:hover,
+#menuPrincipal > ul > li.selected.parent > a:hover,
+#menuPrincipal > ul > li.selected.parent > a{
+  color: #fff;
+}
 #menuPrincipal .parent:hover > a {box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, 0.2);}
 #menuPrincipal .parent > a:hover,
 #menuPrincipal .parent:hover > a,
@@ -158,6 +162,10 @@
   position: relative;
   z-index: 2;
 }
+#menuPrincipal .parent.selected:after{
+  background-color: transparent;
+}
+
 #menuPrincipal .parent {outline: none;}
 #menuPrincipal .parent.focus ul{
   opacity: 1; visibility: visible;
@@ -188,6 +196,15 @@
   -ms-transition: all .1s ease-in;
   -o-transition: all .1s ease-in;
   transition: all .1s ease-in;
+}
+#menuPrincipal ul li [class*="ico-"] ~ ul{
+  left: 0;
+}
+#menuPrincipal ul li:hover{
+  z-index: 4
+}
+#menuPrincipal ul li.focus{
+  z-index: 3;
 }
 
 #menuPrincipal ul li ul li a {
@@ -401,6 +418,4 @@
   padding: 0 0 0 10px;
   margin: 55px 0 0 10px;
 }
-.forceClass #menuPrincipal > ul > li.selected.parent > a{
-  background: none;
-}
+

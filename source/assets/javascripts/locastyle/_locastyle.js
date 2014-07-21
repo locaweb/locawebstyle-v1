@@ -167,7 +167,7 @@ Locastyle = (function() {
 		},
 
 		toggleChild: function(dom_scope) {
-			self = this;
+			var self = this;
 			$(".lnkToggle", dom_scope).on("click", function(e){
 				e.preventDefault();
 				$(this).parents(".toggleChild").find(".itemToToggle").toggleClass("dNone");

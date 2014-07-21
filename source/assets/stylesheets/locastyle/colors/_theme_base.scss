@@ -6,7 +6,9 @@
 #{$theme_name} .collapseGroup summary span,
 #{$theme_name} .boxCollapse h4 span,
 #{$theme_name} #menuPrincipal > ul > li > a:hover,
+#{$theme_name} #menuPrincipal > ul > li > a:focus,
 #{$theme_name} #menuPrincipal .parent > a:hover,
+#{$theme_name} #menuPrincipal .parent > a:focus,
 #{$theme_name} .carousel-control,
 #{$theme_name} .serviceName a,
 #{$theme_name} .innerSideBox [class^="ico-"],
@@ -52,6 +54,9 @@
   color: $pallet_2;
 }
 
+#{$theme_name} #menuPrincipal .parent.selected > a{
+  color: #fff
+}
 
 #{$theme_name} .boxCollapse header h4,
 #{$theme_name} .pathWay li.active a,
