@@ -1,0 +1,9 @@
+---
+title: Versão 1.2.25
+date: 2014-07-23 21:00 UTC
+tags:
+---
+
+**O que tem de novo?**
+
+\- 3 novas imagens de banco de dados no tamanho de 20px. <img src="http://assets.locaweb.com.br/locastyle/1.2.25/images/bd/mysql_20.png" alt="logo Mysql"> <img src="http://assets.locaweb.com.br/locastyle/1.2.25/images/bd/sqlserver_20.png" alt="Logo mssql"> <img src="http://assets.locaweb.com.br/locastyle/1.2.25/images/bd/postgre_20.png" alt="logo postgres">

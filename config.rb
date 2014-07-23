@@ -80,7 +80,7 @@ end
 ####
 #### Versões e URL de downloads
 ####
-set :stable, "1.2.23"
+set :stable, "1.2.25"
 set :download_github, "https://github.com/locaweb/locawebstyle/archive/master.zip"
 set :only_assets, "http://assets.locaweb.com.br/locastyle/#{stable}.zip"
 
