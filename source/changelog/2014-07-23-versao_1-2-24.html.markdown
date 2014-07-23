@@ -1,0 +1,10 @@
+---
+title: Versão 1.2.24
+date: 2014-07-23 20:51 UTC
+tags:
+---
+
+**Ajustes**
+
+\- Corrigindo problemas no submenu. Veja página estática com exemplo dele, <a href="http://locaweb.github.io/locawebstyle-v1/manual/exemplos/home/">aqui</a>
+
