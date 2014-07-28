@@ -1,0 +1,9 @@
+---
+title: Versão 1.2.26
+date: 2014-07-28 20:58 UTC
+tags:
+---
+
+**Ajustes**
+
+\- [Correção do desalinhamento](https://github.com/locaweb/locawebstyle/issues/743) dos botões de calendário, que ocorriam no Firefox.   
