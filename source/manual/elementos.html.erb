@@ -10,8 +10,8 @@ layout: false
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/<%= stable %>/bootstrap/css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/<%= stable %>/stylesheets/locastyle.css">
+		  <link rel="stylesheet" type="text/css" href="<%= base_url + bootstrap_css %>">
+  			<%= stylesheet_link_tag "locastyle" %>
 		<style>
 			.the-icons li{
 				font-size: 16px;
@@ -880,7 +880,7 @@ layout: false
 							<div>
 								<a href="http://www.locaweb.com.br" tabindex="3" class="lnkCoverAll" title="Crie sua caixa postal" aria-label="Crie sua caixa postal">
 									<h3>
-										<img src="http://blog.locaweb.com.br/wp-content/uploads/2011/09/joomla1.png" alt="Logo Joomla">
+										<img src="images/joomla_120x120.png" alt="Logo Joomla">
 										<span class="shortcutTitle">JOOMLA</span>
 									</h3>
 									<p>Instale agora mesmo aplicativo em sua hospedagem.
@@ -932,7 +932,7 @@ layout: false
 								<div>
 									<a href="#" tabindex="3" title="Crie uma nova caixa postal dentro do seu site.">
 										<h3>
-											<img src="https://s.w.org/about/images/logos/wordpress-logo-notext-rgb.png" alt="Logo Wordpress">
+											<img src="images/wordpress_120x120.png" alt="Logo Wordpress">
 											<span class="shortcutTitle">Wordpress</span> 
 										</h3>
 										<p>Faça a instalação do wordpress em seu painel de hospedagem</p>
@@ -941,7 +941,7 @@ layout: false
 								<div>
 									<a href="#" tabindex="3" title="Envie mensagens para várias caixas em um único endereço.">
 										<h3>
-											<img src="http://blog.locaweb.com.br/wp-content/uploads/2011/09/joomla1.png" alt="Logo Joomla">
+											<img src="images/joomla_120x120.png" alt="Logo Joomla">
 											<span class="shortcutTitle">Joomla</span>
 										</h3>
 										<p>Faça a instalação do joomla em seu painel de hospedagem</p>
@@ -950,7 +950,7 @@ layout: false
 								<div>
 									<a href="#" tabindex="3" title="Compartilhe contatos na agenda de todas as caixas postais.">
 										<h3>
-											<img src="http://www.expertoseo.net/sites/default/files/xdrupal.png.pagespeed.ic.MmPyJ-Td4l.png" alt="Logo Drupal">
+											<img src="images/dupral_120x120.png" alt="Logo Drupal">
 											<span class="shortcutTitle">Drupal</span>
 										</h3>
 										<p>Faça a instalação do Drupal em seu painel de hospedagem</p>
@@ -1884,8 +1884,7 @@ layout: false
 			</div>
 		</div>
 
-		<script src="//assets.locaweb.com.br/locastyle/<%= stable %>/javascripts/libs.js"></script>
-  <script src="//assets.locaweb.com.br/locastyle/<%= stable %>/javascripts/locastyle.js"></script>
-  <script src="//assets.locaweb.com.br/locastyle/<%= stable %>/bootstrap/js/bootstrap.js"></script>
+	<%= javascript_include_tag "libs", "locastyle" %>
+  	<script src="<%= base_url + bootstrap_js %>"></script>
 	</body>
 </html>
