@@ -1,0 +1,9 @@
+---
+title: Versão 1.2.27
+date: 2014-08-05 17:26 UTC
+tags:
+---
+
+**O que tem de novo?**
+
+\- Expansão do elemento [shortcutBox](http://locaweb.github.io/locawebstyle-v1/manual/elementos#shortcutImage), que agora pode receber imagens e ícones. 
