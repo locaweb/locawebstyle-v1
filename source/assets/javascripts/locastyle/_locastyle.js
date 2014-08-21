@@ -38,6 +38,7 @@ Locastyle = (function() {
 			this.clickElementChecked(dom_scope);
 			this.togglePassword(dom_scope);
 			this.classToggle(dom_scope);
+			this.positionArrowTarget(dom_scope)
 		},
 
 		popover: function(dom_scope){
@@ -366,8 +367,8 @@ Locastyle = (function() {
 			$('[data-element]').each(function(){
 				var inputChecked = $(this).is(':checked');
 				if (inputChecked == true) {
-					$(this).parents('[data-checked]').siblings().removeClass('active');	
-					$(this).parents('[data-checked]').addClass('active');	
+					$(this).parents('[data-checked]').siblings().removeClass('active');
+					$(this).parents('[data-checked]').addClass('active');
 				};
 			});
 		},
@@ -376,6 +377,16 @@ Locastyle = (function() {
 			$('[data-element]').on('change', function(){
 				locastyle.base.elementChecked();
 			});
+		},
+
+		positionArrowTarget: function () {
+
+			// $(".collapsedRadios .active [data-element]").each(function(){
+			// 	var dataElement = $(this).position();
+			// 	var posLeft = dataElement.left - 350
+			// 	$(this).parents('.collapsedRadios').find('[data-arrow]').css({ left: '100px' })
+			// });
+
 		},
 
 		// Troca de input password para text
