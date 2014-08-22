@@ -30,6 +30,7 @@ Locastyle = (function() {
 			this.linkPreventDefault();
 			this.popover(dom_scope);
 			this.labelSelectCustom();
+			this.collapsedRadiosChecked(dom_scope);
 			this.collapsedRadios(dom_scope);
 			this.closedAllCollapse(dom_scope);
 			this.collapseWithTooltip(dom_scope);
@@ -266,6 +267,14 @@ Locastyle = (function() {
 				self.toggleText($(".minShortcuts"));
 				$(".expandBox").addClass("microBox");
 			}
+		},
+
+		collapsedRadiosChecked: function(dom_scope) {
+			$(".collapsedRadios [data-toggle='collapse']:checked").each(function(){
+				var dataTargetChecked = $(this).data('target');
+				$(this).parents('.collapsedRadios').find('.in').collapse('hide');
+				$(dataTargetChecked).collapse('show');
+			});
 		},
 
 		// look down here to cover tests

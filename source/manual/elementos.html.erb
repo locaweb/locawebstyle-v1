@@ -31,7 +31,7 @@ layout: false
 					<header class="boxOption row">
 						<div class="span3" data-checked="true">
 							<label class="boxOptionLabel" >
-								<input type="radio" class="boxOptionChecked" data-element="true" checked="checked" data-target="#box1" data-toggle="collapse" name="option">
+								<input type="radio" class="boxOptionChecked" data-element="true" data-target="#box1" data-toggle="collapse" name="option">
 								<img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="">
 								<span class="boxOptionInfo">
 									<strong class="boxOptionTitle">CentOS</strong>
@@ -49,12 +49,25 @@ layout: false
 								</span>
 							</label>
 						</div>
+						<div class="span3" data-checked="true">
+							<label class="boxOptionLabel" >
+								<input type="radio" class="boxOptionChecked" data-element="true" checked="checked" data-target="#box3" data-toggle="collapse" name="option">
+								<img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
+								<span class="boxOptionInfo">
+									<strong class="boxOptionTitle">Debian</strong>
+									<small>Pequena descrição</small>
+								</span>
+							</label>
+						</div>
 					</header>
-					<div id="box1" class="collapse in">
+					<div id="box1" class="collapse">
 						<div class="obsGray" data-arrow="true">Primeiro box</div>
 					</div>
 					<div id="box2" class="collapse">
 						<div class="obsGray" data-arrow="true">Segundo box</div>
+					</div>
+					<div id="box3" class="collapse">
+						<div class="obsGray" data-arrow="true">Terceiro box</div>
 					</div>
 				</div>
 
@@ -1304,10 +1317,10 @@ layout: false
 								<label>Tipo de autenticação:</label>
 								<div class="controls">
 									<label class="control-label">
-										<input type="radio" data-target="#authOpt" name="control" data-toggle="collapse" checked="checked"> Autenticado
+										<input type="radio" data-target="#authOpt" name="control" data-toggle="collapse" > Autenticado
 									</label>
 									<label class="control-label">
-										<input type="radio" data-target="#authOpt2" name="control" data-toggle="collapse"> Não autenticado
+										<input type="radio" data-target="#authOpt2" name="control" checked="checked" data-toggle="collapse"> Não autenticado
 									</label>
 									<div id="authOpt" class="collapse in">
 										<div class="boxGrayOpt formInline">
