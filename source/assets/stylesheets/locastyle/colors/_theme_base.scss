@@ -18,8 +18,7 @@
 #{$theme_name} .boxInfoAction.sought b,
 #{$theme_name} .guided-tour.on .lnk-suggestions,
 #{$theme_name} .colorTheme,
-#{$theme_name} .messageInfo.selectable.active .selectableTitle,
-#{$theme_name} .boxOption .active .boxOptionTitle{
+#{$theme_name} .messageInfo.selectable.active .selectableTitle{
   color: $pallet_1;
 }
 
@@ -203,8 +202,4 @@
   background-image: -ms-linear-gradient(top,  $pallet_1 0%,$pallet_2 100%);
   background-image: linear-gradient(to bottom,  $pallet_1 0%,$pallet_2 100%);
   filter: none;
-}
-
-#{$theme_name} .boxOption .active .boxOptionLabel{
-  border-color: $pallet_1;
 }
