@@ -27,90 +27,7 @@ layout: false
 
 		<div id="main">
 			<div class="limit">
-				<div class="collapsedRadios">
-					<header class="boxOption row">
-						<div class="span3" data-checked="true">
-							<label class="boxOptionLabel" >
-								<input type="radio" class="boxOptionChecked" data-element="true" data-target="#box1" data-toggle="collapse" name="option">
-								<img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="">
-								<span class="boxOptionInfo">
-									<strong class="boxOptionTitle">CentOS</strong>
-									<small>Pequena descrição</small>
-								</span>
-							</label>
-						</div>
-						<div class="span3" data-checked="true">
-							<label class="boxOptionLabel" >
-								<input type="radio" class="boxOptionChecked" data-element="true" data-target="#box2" data-toggle="collapse" name="option">
-								<img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
-								<span class="boxOptionInfo">
-									<strong class="boxOptionTitle">Debian</strong>
-									<small>Pequena descrição</small>
-								</span>
-							</label>
-						</div>
-						<div class="span3" data-checked="true">
-							<label class="boxOptionLabel" >
-								<input type="radio" class="boxOptionChecked" data-element="true" checked="checked" data-target="#box3" data-toggle="collapse" name="option">
-								<img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
-								<span class="boxOptionInfo">
-									<strong class="boxOptionTitle">Debian</strong>
-									<small>Pequena descrição</small>
-								</span>
-							</label>
-						</div>
-					</header>
-					<div id="box1" class="collapse">
-						<div class="obsGray" data-arrow="true">Primeiro box</div>
-					</div>
-					<div id="box2" class="collapse">
-						<div class="obsGray" data-arrow="true">Segundo box</div>
-					</div>
-					<div id="box3" class="collapse">
-						<div class="obsGray" data-arrow="true">Terceiro box</div>
-					</div>
-				</div>
 
-
-
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-
-					<div class="collapsedRadios">
-						<header class="boxOption row">
-							<div class="span12">
-								<label>
-									<input type="radio" name="option2">
-									<img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="">
-									<span class="boxOptionInfo">
-										<strong class="boxOptionTitle">Linux CenOS 6</strong>
-										<p>Imagem do servidor <strong>cpro00012</strong> | descrição do servidor <br>
-										Gerado em 13/05/2015</p>
-									</span>
-								</label>
-							</div>
-							<div class="span12">
-								<label>
-									<input type="radio" name="option2">
-									<img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
-									<span class="boxOptionInfo">
-										<strong class="boxOptionTitle">Linux Debian 7</strong>
-										Imagem do servidor <strong>cpro00047</strong> <br>Gerado em 13/05/2015
-									</span>
-								</label>
-							</div>
-						</header>
-
-					</div>
-
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
 				<h1>Collapses</h1>
 				<br>
 				<div class="row">
@@ -379,6 +296,85 @@ layout: false
 	    </div>
    </div>
 
+   <hr>
+
+   <h1 id="boxSelecionavel">Box selecionável</h1>
+					<div class="collapsedRadios">
+					<header class="boxOption row">
+						<div class="span3" data-checked="true">
+							<label class="boxOptionLabel" >
+								<input type="radio" class="boxOptionChecked" data-element="true" data-target="#box1" data-toggle="collapse" name="option">
+								<img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="">
+								<span class="boxOptionInfo">
+									<span class="boxOptionTitle">CentOS</span>
+									<small>Pequena descrição</small>
+								</span>
+							</label>
+						</div>
+						<div class="span3" data-checked="true">
+							<label class="boxOptionLabel" >
+								<input type="radio" class="boxOptionChecked" data-element="true" data-target="#box2" data-toggle="collapse" name="option">
+								<img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
+								<span class="boxOptionInfo">
+									<span class="boxOptionTitle">Debian</span>
+									<small>Pequena descrição</small>
+								</span>
+							</label>
+						</div>
+						<div class="span3" data-checked="true">
+							<label class="boxOptionLabel" >
+								<input type="radio" class="boxOptionChecked" data-element="true" checked="checked" data-target="#box3" data-toggle="collapse" name="option">
+								<img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
+								<span class="boxOptionInfo">
+									<span class="boxOptionTitle">Debian</span>
+									<small>Pequena descrição</small>
+								</span>
+							</label>
+						</div>
+					</header>
+					<div id="box1" class="collapse">
+						Primeiro box
+					</div>
+					<div id="box2" class="collapse">
+						Segundo box
+					</div>
+					<div id="box3" class="collapse">
+						Terceiro box
+					</div>
+				</div>
+
+
+
+					<br>
+					<br>
+					<h1 id="boxSelecionavel">Box selecionável sem borda</h1>
+
+					<div class="collapsedRadios">
+						<header class="boxOption row">
+							<div class="span12">
+								<label>
+									<input type="radio" name="option2">
+									<img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="">
+									<span class="boxOptionInfo">
+										<span class="boxOptionTitle">Linux CenOS 6</span>
+										<p>Imagem do servidor <strong>cpro00012</strong> | descrição do servidor <br>
+										Gerado em 13/05/2015</p>
+									</span>
+								</label>
+							</div>
+							<div class="span12">
+								<label>
+									<input type="radio" name="option2">
+									<img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
+									<span class="boxOptionInfo">
+										<span class="boxOptionTitle">Linux Debian 7</span>
+										Imagem do servidor <strong>cpro00047</strong> <br>Gerado em 13/05/2015
+									</span>
+								</label>
+							</div>
+						</header>
+
+					</div>
 
 
 				<hr>

@@ -1,0 +1,157 @@
+---
+title: Aplicações - Box com colunas
+menu_page: sidebar-aplicacoes.erb
+---
+
+<article class="text">
+  <header>
+    <h1>Boxes selecionável</h1>
+    <h3>Box com variações de layout que exibe informações ao ser selecionado.</h3>
+  </header>
+  <p>Esse elemento utiliza dos grids pra ter sua largura, conforme o exemplo abaixo.</p>
+
+  <div class="collapsedRadios">
+    <header class="boxOption row-fluid">
+      <div class="span4" data-checked="true">
+        <label class="boxOptionLabel" >
+          <input type="radio" class="boxOptionChecked" data-element="true" data-target="#box1" data-toggle="collapse" name="option">
+          <img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="">
+          <span class="boxOptionInfo">
+            <span class="boxOptionTitle">Título</span>
+            <small>Alguma descrição</small>
+          </span>
+        </label>
+      </div>
+      <div class="span4" data-checked="true">
+        <label class="boxOptionLabel" >
+          <input type="radio" class="boxOptionChecked" data-element="true" data-target="#box2" data-toggle="collapse" name="option">
+          <img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
+          <span class="boxOptionInfo">
+            <span class="boxOptionTitle">Título</span>
+            <small>Alguma descrição</small>
+          </span>
+        </label>
+      </div>
+      <div class="span4" data-checked="true">
+        <label class="boxOptionLabel" >
+          <input type="radio" class="boxOptionChecked" data-element="true" checked="checked" data-target="#box3" data-toggle="collapse" name="option">
+          <img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
+          <span class="boxOptionInfo">
+            <span class="boxOptionTitle">Título</span>
+            <small>Alguma descrição</small>
+          </span>
+        </label>
+      </div>
+    </header>
+    <div id="box1" class="collapse">
+     <p>Conteúdo do primeiro box</p>
+    </div>
+    <div id="box2" class="collapse">
+     <p>Conteúdo Segundo box</p>
+    </div>
+    <div id="box3" class="collapse">
+     <p>Terceiro box</p>
+    </div>
+  </div>
+
+<br><br>
+<pre class="lang-html prettyprint linenums">
+&lt;div class="collapsedRadios"&gt;
+  &lt;header class="boxOption row-fluid"&gt;
+    &lt;div class="span3" data-checked="true"&gt;
+      &lt;label class="boxOptionLabel" &gt;
+        &lt;input type="radio" class="boxOptionChecked" data-element="true" data-target="#box1" data-toggle="collapse" name="option"&gt;
+        &lt;img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt=""&gt;
+        &lt;span class="boxOptionInfo"&gt;
+          &lt;span class="boxOptionTitle"&gt;Título&lt;/span&gt;
+          &lt;small&gt;Alguma descrição&lt;/small&gt;
+        &lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="span3" data-checked="true"&gt;
+      &lt;label class="boxOptionLabel" &gt;
+        &lt;input type="radio" class="boxOptionChecked" data-element="true" data-target="#box2" data-toggle="collapse" name="option"&gt;
+        &lt;img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt=""&gt;
+        &lt;span class="boxOptionInfo"&gt;
+          &lt;span class="boxOptionTitle"&gt;Título&lt;/span&gt;
+          &lt;small&gt;Alguma descrição&lt;/small&gt;
+        &lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="span3" data-checked="true"&gt;
+      &lt;label class="boxOptionLabel" &gt;
+        &lt;input type="radio" class="boxOptionChecked" data-element="true" checked="checked" data-target="#box3" data-toggle="collapse" name="option"&gt;
+        &lt;img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt=""&gt;
+        &lt;span class="boxOptionInfo"&gt;
+          &lt;span class="boxOptionTitle"&gt;Título&lt;/span&gt;
+          &lt;small&gt;Alguma descrição&lt;/small&gt;
+        &lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div id="box1" class="collapse"&gt;
+    &lt;p&gt;Conteúdo do primeiro box&lt;/p&gt;&lt;
+  &lt;/div&gt;
+  &lt;div id="box2" class="collapse"&gt;
+    &lt;p&gt;Conteúdo Segundo box&lt;/p&gt;&lt;
+  &lt;/div&gt;
+  &lt;div id="box3" class="collapse"&gt;
+    &lt;p&gt;Terceiro box&lt;/p&gt;&lt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<h2>Variação em bloco sem as bordas</h2>
+<p>O exemplo abaixo também utiliza os grids</p>
+
+<div class="boxOption row">
+  <div class="span12">
+    <label>
+      <input type="radio" name="option2">
+      <img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="logo postgres">
+      <span class="boxOptionInfo">
+        <span class="boxOptionTitle">Título 1</span>
+        <p>Imagem do servidor <strong>cpro00012</strong> | descrição do servidor <br>
+        Gerado em 13/05/2015</p>
+      </span>
+    </label>
+  </div>
+  <div class="span12">
+    <label>
+      <input type="radio" name="option2">
+      <img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="logo sqlserver">
+      <span class="boxOptionInfo">
+        <span class="boxOptionTitle">Título 2</span>
+        Imagem do servidor <strong>cpro00047</strong> <br>Gerado em 13/05/2015
+      </span>
+    </label>
+  </div>
+</div>
+
+<pre class="lang-html prettyprint linenums">
+&lt;div class="boxOption row"&gt;
+  &lt;div class="span12"&gt;
+    &lt;label&gt;
+      &lt;input type="radio" name="option2"&gt;
+      &lt;img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="logo postgres"&gt;
+      &lt;span class="boxOptionInfo"&gt;
+        &lt;span class="boxOptionTitle"&gt;Título 1&lt;/span&gt;
+        &lt;p&gt;Imagem do servidor &lt;strong&gt;cpro00012&lt;/strong&gt; | descrição do servidor &lt;br&gt;
+        Gerado em 13/05/2015&lt;/p&gt;
+      &lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="span12"&gt;
+    &lt;label&gt;
+      &lt;input type="radio" name="option2"&gt;
+      &lt;img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="logo sqlserver"&gt;
+      &lt;span class="boxOptionInfo"&gt;
+        &lt;span class="boxOptionTitle"&gt;Título 2&lt;/span&gt;
+        Imagem do servidor &lt;strong&gt;cpro00047&lt;/strong&gt; &lt;br&gt;Gerado em 13/05/2015
+      &lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+</article>
