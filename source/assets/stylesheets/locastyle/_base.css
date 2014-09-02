@@ -1552,3 +1552,74 @@ ol p{font-size: inherit;}
   border-top: 1px solid #E5E5E5;
   padding: 10px;
 }
+
+/*Box Option*/
+.boxOption {
+  margin-bottom: 10px;
+}
+.boxOption label{
+  font-weight: normal;
+  display: inline-block;
+}
+.boxOption .boxOptionLabel{
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+  display: block;
+  padding: 15px 12px;
+  position: relative;
+}
+.boxOption input,
+.boxOption img{
+  display: inline-block;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.boxOption .boxOptionInfo{
+  color: #767676;
+  display: inline-block;
+  line-height: 1.3;
+  vertical-align: middle;
+}
+.boxOption small{
+  display: block;
+  margin-top: 3px
+}
+.boxOption .boxOptionTitle{
+  color: #2a2a2a;
+  font-weight: normal;
+  display: block;
+}
+.boxOption .active .boxOptionLabel{
+  background-color: #e5e5e5;
+  border-color: #c6c6c6;
+  box-shadow: inset 0 3px 5px #c6c6c6;
+}
+
+.boxOption .active .boxOptionLabel:before,
+.boxOption .active .boxOptionLabel:after{
+  content: "";
+  left: 50%;
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+.boxOption .active .boxOptionLabel:before{
+  border-top: 8px solid #e5e5e5;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: -8px;
+  margin-left: -8px;
+  z-index: 2;
+}
+.boxOption .active .boxOptionLabel:after{
+  border-top: 10px solid #c6c6c6;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -10px;
+  margin-left: -10px;
+  z-index: 1;
+}
+.boxOption input:checked ~ .boxOptionInfo > .boxOptionTitle{
+  font-weight: bold;
+}

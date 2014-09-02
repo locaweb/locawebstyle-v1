@@ -30,12 +30,13 @@ Locastyle = (function() {
 			this.linkPreventDefault();
 			this.popover(dom_scope);
 			this.labelSelectCustom();
+			this.collapsedRadiosChecked(dom_scope);
 			this.collapsedRadios(dom_scope);
 			this.closedAllCollapse(dom_scope);
 			this.collapseWithTooltip(dom_scope);
 			this.collapseNavButtons(dom_scope);
-			this.listChecked(dom_scope);
-			this.clickListChecked(dom_scope);
+			this.elementChecked(dom_scope);
+			this.clickElementChecked(dom_scope);
 			this.togglePassword(dom_scope);
 			this.classToggle(dom_scope);
 		},
@@ -267,6 +268,14 @@ Locastyle = (function() {
 			}
 		},
 
+		collapsedRadiosChecked: function(dom_scope) {
+			$(".collapsedRadios [data-toggle='collapse']:checked").each(function(){
+				var dataTargetChecked = $(this).data('target');
+				$(this).parents('.collapsedRadios').find('.in').collapse('hide');
+				$(dataTargetChecked).collapse('show');
+			});
+		},
+
 		// look down here to cover tests
 		collapsedRadios: function(dom_scope) {
 			$(".collapsedRadios [data-toggle='collapse']").on("click", function(){
@@ -362,20 +371,20 @@ Locastyle = (function() {
 		},
 
 
-		listChecked: function(dom_scope) {
-			$('.selectableCheck').each(function(){
+		elementChecked: function(dom_scope) {
+			$('[data-element]').each(function(){
 				var inputChecked = $(this).is(':checked');
 				if (inputChecked == true) {
-					$('.selectable').removeClass('active');	
-					$(this).parents('.selectable').addClass('active');	
+					$(this).parents('[data-checked]').siblings().removeClass('active');
+					$(this).parents('[data-checked]').addClass('active');
 				};
-			})
+			});
 		},
 
-		clickListChecked: function(dom_scope) {
-			$('.selectableCheck').on('change', function(){
-				locastyle.base.listChecked();
-			})
+		clickElementChecked: function(dom_scope) {
+			$('[data-element]').on('change', function(){
+				locastyle.base.elementChecked();
+			});
 		},
 
 		// Troca de input password para text
