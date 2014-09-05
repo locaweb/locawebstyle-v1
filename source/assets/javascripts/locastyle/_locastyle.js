@@ -39,6 +39,8 @@ Locastyle = (function() {
 			this.clickElementChecked(dom_scope);
 			this.togglePassword(dom_scope);
 			this.classToggle(dom_scope);
+			this.boxDinamicArrow(dom_scope);
+			this.arrowDinamic(dom_scope, '[data-element]:checked');
 		},
 
 		popover: function(dom_scope){
@@ -372,9 +374,8 @@ Locastyle = (function() {
 
 
 		elementChecked: function(dom_scope) {
-			$('[data-element]').each(function(){
-				var inputChecked = $(this).is(':checked');
-				if (inputChecked == true) {
+			$('[data-element]',dom_scope).each(function(){
+				if ($(this).attr('checked') == 'checked') {
 					$(this).parents('[data-checked]').siblings().removeClass('active');
 					$(this).parents('[data-checked]').addClass('active');
 				};
@@ -382,8 +383,9 @@ Locastyle = (function() {
 		},
 
 		clickElementChecked: function(dom_scope) {
-			$('[data-element]').on('change', function(){
+			$('[data-element]', dom_scope).on('change', function(){
 				locastyle.base.elementChecked();
+				locastyle.base.arrowDinamic(dom_scope, $(this));
 			});
 		},
 
@@ -406,8 +408,19 @@ Locastyle = (function() {
 		      var classes = $(this).data('classtoggle').split(',');
 		      $(this).toggleClass(classes[0]).toggleClass(classes[1]);
 		    });
-		}
+		},
 
+		arrowDinamic: function(dom_scope, el){
+			$('.collapsedRadios [data-element]:checked', dom_scope).each(function(){
+				var elem = $(el);
+				var offsetX = elem.offset().left - elem.parents('.collapsedRadios').offset().left;
+				$(elem).parents('.collapsedRadios').find('.arrowTop').css('left', offsetX);
+			});
+		},
+
+		boxDinamicArrow: function(dom_scope){
+			$('.boxDinamicArrow', dom_scope).prepend('<span class="arrowTop"/>');
+		}
 
 	}
 

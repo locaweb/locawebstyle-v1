@@ -10,61 +10,61 @@ menu_page: sidebar-aplicacoes.erb
   </header>
   <p>Esse elemento utiliza dos grids pra ter sua largura, conforme o exemplo abaixo.</p>
 
-  <div class="collapsedRadios">
-    <header class="boxOption row-fluid">
-      <div class="span4" data-checked="true">
-        <label class="boxOptionLabel" >
-          <input type="radio" class="boxOptionChecked" data-element="true" data-target="#box1" data-toggle="collapse" name="option">
-          <img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="">
-          <span class="boxOptionInfo">
-            <span class="boxOptionTitle">Título</span>
-            <small>Alguma descrição</small>
-          </span>
-        </label>
-      </div>
-      <div class="span4" data-checked="true">
-        <label class="boxOptionLabel" >
-          <input type="radio" class="boxOptionChecked" data-element="true" data-target="#box2" data-toggle="collapse" name="option">
-          <img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
-          <span class="boxOptionInfo">
-            <span class="boxOptionTitle">Título</span>
-            <small>Alguma descrição</small>
-          </span>
-        </label>
-      </div>
-      <div class="span4" data-checked="true">
-        <label class="boxOptionLabel" >
-          <input type="radio" class="boxOptionChecked" data-element="true" checked="checked" data-target="#box3" data-toggle="collapse" name="option">
-          <img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
-          <span class="boxOptionInfo">
-            <span class="boxOptionTitle">Título</span>
-            <small>Alguma descrição</small>
-          </span>
-        </label>
-      </div>
-    </header>
-    <div id="box1" class="collapse">
-     <p>Conteúdo do primeiro box</p>
+<div class="collapsedRadios">
+  <header class="boxOption row">
+    <div class="span3" data-checked="true">
+      <label class="boxOptionLabel" >
+        <input type="radio" class="boxOptionChecked" data-element="true" data-target="#box1" data-toggle="collapse" name="option">
+        <img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="">
+        <span class="boxOptionInfo">
+          <span class="boxOptionTitle">CentOS</span>
+          <small>Pequena descrição</small>
+        </span>
+      </label>
     </div>
-    <div id="box2" class="collapse">
-     <p>Conteúdo Segundo box</p>
+    <div class="span3" data-checked="true">
+      <label class="boxOptionLabel" >
+        <input type="radio" class="boxOptionChecked" data-element="true" data-target="#box2" data-toggle="collapse" name="option">
+        <img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
+        <span class="boxOptionInfo">
+          <span class="boxOptionTitle">Debian</span>
+          <small>Pequena descrição</small>
+        </span>
+      </label>
     </div>
-    <div id="box3" class="collapse">
-     <p>Terceiro box</p>
+    <div class="span3" data-checked="true">
+      <label class="boxOptionLabel" >
+        <input type="radio" class="boxOptionChecked" data-element="true" checked="checked" data-target="#box3" data-toggle="collapse" name="option">
+        <img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
+        <span class="boxOptionInfo">
+          <span class="boxOptionTitle">Debian</span>
+          <small>Pequena descrição</small>
+        </span>
+      </label>
     </div>
+  </header>
+  <div id="box1" class="collapse">
+    <div class="boxDinamicArrow">Primeiro conteúdo</div>
   </div>
+  <div id="box2" class="collapse">
+    <div class="boxDinamicArrow">Segundo conteúdo</div>
+  </div>
+  <div id="box3" class="collapse">
+    <div class="boxDinamicArrow">Terceiro conteúdo</div>
+  </div>
+</div>
 
 <br><br>
 <pre class="lang-html prettyprint linenums">
 &lt;div class="collapsedRadios"&gt;
-  &lt;header class="boxOption row-fluid"&gt;
+  &lt;header class="boxOption row"&gt;
     &lt;div class="span3" data-checked="true"&gt;
       &lt;label class="boxOptionLabel" &gt;
         &lt;input type="radio" class="boxOptionChecked" data-element="true" data-target="#box1" data-toggle="collapse" name="option"&gt;
         &lt;img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt=""&gt;
         &lt;span class="boxOptionInfo"&gt;
-          &lt;span class="boxOptionTitle"&gt;Título&lt;/span&gt;
-          &lt;small&gt;Alguma descrição&lt;/small&gt;
+          &lt;span class="boxOptionTitle"&gt;CentOS&lt;/span&gt;
+          &lt;small&gt;Pequena descrição&lt;/small&gt;
         &lt;/span&gt;
       &lt;/label&gt;
     &lt;/div&gt;
@@ -73,8 +73,8 @@ menu_page: sidebar-aplicacoes.erb
         &lt;input type="radio" class="boxOptionChecked" data-element="true" data-target="#box2" data-toggle="collapse" name="option"&gt;
         &lt;img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt=""&gt;
         &lt;span class="boxOptionInfo"&gt;
-          &lt;span class="boxOptionTitle"&gt;Título&lt;/span&gt;
-          &lt;small&gt;Alguma descrição&lt;/small&gt;
+          &lt;span class="boxOptionTitle"&gt;Debian&lt;/span&gt;
+          &lt;small&gt;Pequena descrição&lt;/small&gt;
         &lt;/span&gt;
       &lt;/label&gt;
     &lt;/div&gt;
@@ -83,26 +83,26 @@ menu_page: sidebar-aplicacoes.erb
         &lt;input type="radio" class="boxOptionChecked" data-element="true" checked="checked" data-target="#box3" data-toggle="collapse" name="option"&gt;
         &lt;img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt=""&gt;
         &lt;span class="boxOptionInfo"&gt;
-          &lt;span class="boxOptionTitle"&gt;Título&lt;/span&gt;
-          &lt;small&gt;Alguma descrição&lt;/small&gt;
+          &lt;span class="boxOptionTitle"&gt;Debian&lt;/span&gt;
+          &lt;small&gt;Pequena descrição&lt;/small&gt;
         &lt;/span&gt;
       &lt;/label&gt;
     &lt;/div&gt;
   &lt;/header&gt;
   &lt;div id="box1" class="collapse"&gt;
-    &lt;p&gt;Conteúdo do primeiro box&lt;/p&gt;&lt;
+    &lt;div class="boxDinamicArrow"&gt;Primeiro conteúdo&lt;/div&gt;
   &lt;/div&gt;
   &lt;div id="box2" class="collapse"&gt;
-    &lt;p&gt;Conteúdo Segundo box&lt;/p&gt;&lt;
+    &lt;div class="boxDinamicArrow"&gt;Segundo conteúdo&lt;/div&gt;
   &lt;/div&gt;
   &lt;div id="box3" class="collapse"&gt;
-    &lt;p&gt;Terceiro box&lt;/p&gt;&lt;
+    &lt;div class="boxDinamicArrow"&gt;Terceiro conteúdo&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
 
-<h2>Variação em bloco sem as bordas</h2>
-<p>O exemplo abaixo também utiliza os grids</p>
+<h2>Box selecionável simples</h2>
+<p>O exemplo abaixo também utiliza os grids, porém não exibe nenhum conteúdo.</p>
 
 <div class="boxOption row">
   <div class="span12">
