@@ -299,7 +299,7 @@ layout: false
    <hr>
 
    <h1 id="boxSelecionavel">Box selecionável</h1>
-					<div class="collapsedRadios">
+				<div class="collapsedRadios">
 					<header class="boxOption row">
 						<div class="span3" data-checked="true">
 							<label class="boxOptionLabel" >
@@ -333,16 +333,15 @@ layout: false
 						</div>
 					</header>
 					<div id="box1" class="collapse">
-						Primeiro box
+						<div class="boxDinamicArrow">Primeiro conteúdo</div>
 					</div>
 					<div id="box2" class="collapse">
-						Segundo box
+						<div class="boxDinamicArrow">Segundo conteúdo</div>
 					</div>
 					<div id="box3" class="collapse">
-						Terceiro box
+						<div class="boxDinamicArrow">Terceiro conteúdo</div>
 					</div>
 				</div>
-
 
 
 					<br>
@@ -353,7 +352,7 @@ layout: false
 						<header class="boxOption row">
 							<div class="span12">
 								<label>
-									<input type="radio" name="option2">
+									<input type="radio" name="option3">
 									<img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="">
 									<span class="boxOptionInfo">
 										<span class="boxOptionTitle">Linux CenOS 6</span>
@@ -364,7 +363,7 @@ layout: false
 							</div>
 							<div class="span12">
 								<label>
-									<input type="radio" name="option2">
+									<input type="radio" name="option3">
 									<img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
 									<span class="boxOptionInfo">
 										<span class="boxOptionTitle">Linux Debian 7</span>
@@ -1312,21 +1311,21 @@ layout: false
 							<div class="control-group collapsedRadios">
 								<label>Tipo de autenticação:</label>
 								<div class="controls">
-									<label class="control-label">
+									<label class="control-label" data-checked>
 										<input type="radio" data-target="#authOpt" name="control" data-toggle="collapse" > Autenticado
 									</label>
-									<label class="control-label">
+									<label class="control-label" data-checked>
 										<input type="radio" data-target="#authOpt2" name="control" checked="checked" data-toggle="collapse"> Não autenticado
 									</label>
 									<div id="authOpt" class="collapse in">
-										<div class="boxGrayOpt formInline">
+										<div class="boxDinamicArrow formInline">
 											<label><input type="checkbox" value="1"> CPF</label>
 											<label><input type="checkbox" value="1"> Endereço</label>
 											<label><input type="checkbox" value="1"> CEP</label>
 										</div>
 									</div>
 									<div id="authOpt2" class="collapse">
-										<div class="boxGrayOpt formInline">
+										<div class="boxDinamicArrow formInline">
 											<input type="text" class="span5">
 										</div>
 									</div>
