@@ -293,6 +293,84 @@
 	    </div>
    </div>
 
+   <hr>
+
+   <h1 id="boxSelecionavel">Box selecionável</h1>
+				<div class="collapsedRadios">
+					<header class="boxOption row">
+						<div class="span3" data-checked="true">
+							<label class="boxOptionLabel" >
+								<input type="radio" class="boxOptionChecked" data-element="true" data-target="#box1" data-toggle="collapse" name="option">
+								<img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="">
+								<span class="boxOptionInfo">
+									<span class="boxOptionTitle">CentOS</span>
+									<small>Pequena descrição</small>
+								</span>
+							</label>
+						</div>
+						<div class="span3" data-checked="true">
+							<label class="boxOptionLabel" >
+								<input type="radio" class="boxOptionChecked" data-element="true" data-target="#box2" data-toggle="collapse" name="option">
+								<img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
+								<span class="boxOptionInfo">
+									<span class="boxOptionTitle">Debian</span>
+									<small>Pequena descrição</small>
+								</span>
+							</label>
+						</div>
+						<div class="span3" data-checked="true">
+							<label class="boxOptionLabel" >
+								<input type="radio" class="boxOptionChecked" data-element="true" checked="checked" data-target="#box3" data-toggle="collapse" name="option">
+								<img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
+								<span class="boxOptionInfo">
+									<span class="boxOptionTitle">Debian</span>
+									<small>Pequena descrição</small>
+								</span>
+							</label>
+						</div>
+					</header>
+					<div id="box1" class="collapse">
+						<div class="boxDinamicArrow">Primeiro conteúdo</div>
+					</div>
+					<div id="box2" class="collapse">
+						<div class="boxDinamicArrow">Segundo conteúdo</div>
+					</div>
+					<div id="box3" class="collapse">
+						<div class="boxDinamicArrow">Terceiro conteúdo</div>
+					</div>
+				</div>
+
+
+					<br>
+					<br>
+					<h1 id="boxSelecionavel">Box selecionável sem borda</h1>
+
+					<div class="collapsedRadios">
+						<header class="boxOption row">
+							<div class="span12">
+								<label>
+									<input type="radio" name="option3">
+									<img src="http://assets.locaweb.com.br/locastyle/1.2.27/images/bd/logo-postgre-mini.png" alt="">
+									<span class="boxOptionInfo">
+										<span class="boxOptionTitle">Linux CenOS 6</span>
+										<p>Imagem do servidor <strong>cpro00012</strong> | descrição do servidor <br>
+										Gerado em 13/05/2015</p>
+									</span>
+								</label>
+							</div>
+							<div class="span12">
+								<label>
+									<input type="radio" name="option3">
+									<img src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="">
+									<span class="boxOptionInfo">
+										<span class="boxOptionTitle">Linux Debian 7</span>
+										Imagem do servidor <strong>cpro00047</strong> <br>Gerado em 13/05/2015
+									</span>
+								</label>
+							</div>
+						</header>
+
+					</div>
 
 
 				<hr>
@@ -662,10 +740,10 @@
 
         <h1>Lista selecionável</h1>
 
-        <div class="messageInfo selectable">
-          <header class="headerInfo">
+        <div data-checked="true" class="messageInfo selectable">
+           <header class="headerInfo">
             <label for="data1" class="span4">
-              <input id="data1" checked="checked" class="selectableCheck" type="radio" name="data">
+              <input id="data1" checked="checked" data-element="true" class="selectableCheck" type="radio" name="data">
               <img alt="linux" src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-mysql-mini.png" alt="logo Mysql">
               <span class="selectableTitle">MySQL</span>
             </label>
@@ -686,10 +764,10 @@
           </header>
         </div>
 
-        <div class="messageInfo selectable">
-          <header class="headerInfo">
+        <div data-checked="true" class="messageInfo selectable">
+           <header class="headerInfo">
             <label for="data3" class="span4">
-              <input id="data3" class="selectableCheck" type="radio" name="data">
+              <input id="data3" data-element="true" class="selectableCheck" type="radio" name="data">
               <img alt="linux" src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-postgre-mini.png" alt="logo sqlserver">
               <span class="selectableTitle">PostgreSQL</span>
             </label>
@@ -710,10 +788,10 @@
         </div>
 
 
-        <div class="messageInfo selectable">
-          <header class="headerInfo">
+        <div data-checked="true" class="messageInfo selectable">
+           <header class="headerInfo">
             <label for="data2" class="span4">
-              <input id="data2" class="selectableCheck" type="radio" name="data">
+              <input id="data2" data-element="true" class="selectableCheck" type="radio" name="data">
               <img alt="linux" src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-sqlserver-mini.png" alt="logo postgreSql">
               <span class="selectableTitle">SQL Server 2008</span>
             </label>
@@ -738,10 +816,10 @@
 
         <h1>Lista selecionável desabilitada</h1>
 
-        <div class="messageInfo selectable disabled">
+        <div data-checked="true" class="messageInfo selectable disabled" >
           <header class="headerInfo">
             <label for="data11" class="span4">
-              <input id="data11" disabled="disabled"  class="selectableCheck" type="radio" name="data2">
+              <input id="data11" disabled="disabled"  data-element="true" class="selectableCheck" type="radio" name="data2">
               <img alt="linux" src="http://assets.locaweb.com.br/locastyle/1.2.22/images/bd/logo-mysql-mini.png" alt="logo Mysql">
               <span class="selectableTitle">MySQL</span>
             </label>
@@ -930,7 +1008,7 @@
 									<a href="#" tabindex="3" title="Crie uma nova caixa postal dentro do seu site.">
 										<h3>
 											<img src="/locawebstyle-v1/manual/images/wordpress_120x120.png" alt="Logo Wordpress">
-											<span class="shortcutTitle">Wordpress</span> 
+											<span class="shortcutTitle">Wordpress</span>
 										</h3>
 										<p>Faça a instalação do wordpress em seu painel de hospedagem</p>
 									</a>
@@ -1230,21 +1308,21 @@
 							<div class="control-group collapsedRadios">
 								<label>Tipo de autenticação:</label>
 								<div class="controls">
-									<label class="control-label">
-										<input type="radio" data-target="#authOpt" name="control" data-toggle="collapse" checked="checked"> Autenticado
+									<label class="control-label" data-checked>
+										<input type="radio" data-target="#authOpt" name="control" data-toggle="collapse" > Autenticado
 									</label>
-									<label class="control-label">
-										<input type="radio" data-target="#authOpt2" name="control" data-toggle="collapse"> Não autenticado
+									<label class="control-label" data-checked>
+										<input type="radio" data-target="#authOpt2" name="control" checked="checked" data-toggle="collapse"> Não autenticado
 									</label>
 									<div id="authOpt" class="collapse in">
-										<div class="boxGrayOpt formInline">
+										<div class="boxDinamicArrow formInline">
 											<label><input type="checkbox" value="1"> CPF</label>
 											<label><input type="checkbox" value="1"> Endereço</label>
 											<label><input type="checkbox" value="1"> CEP</label>
 										</div>
 									</div>
 									<div id="authOpt2" class="collapse">
-										<div class="boxGrayOpt formInline">
+										<div class="boxDinamicArrow formInline">
 											<input type="text" class="span5">
 										</div>
 									</div>
