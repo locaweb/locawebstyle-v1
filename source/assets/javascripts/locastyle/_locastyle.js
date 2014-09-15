@@ -264,6 +264,7 @@ Locastyle = (function() {
 		},
 
 		minShortcutsCookieHandler: function(){
+			var self = this;
 			if($.cookie("minShortcuts") === "true"){
 				self.toggleText($(".minShortcuts"));
 				$(".expandBox").addClass("microBox");
