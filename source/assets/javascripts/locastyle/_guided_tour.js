@@ -58,9 +58,9 @@ Locastyle.prototype.guidedTour = ( function() {
 	}
 
 	function setCookie(){
-		if($.cookie("cookie_tour") != "true"){
+		if($.cookie("cookie_tour") != 'true'){
 			$(config.selectors.open).click();
-			$.cookie('cookie_tour', "true");
+			$.cookie('cookie_tour', 'true', {path: window.location.pathname});
 		}
 	}
 
