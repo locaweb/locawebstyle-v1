@@ -1,0 +1,9 @@
+---
+title: Versão 1.2.29
+date: 2014-09-23 16:48 UTC
+tags:
+---
+
+**Corrigimos**
+
+\-  Cookie do Tour guiado [veja issue](https://github.com/locaweb/locawebstyle-v1/pull/13)
