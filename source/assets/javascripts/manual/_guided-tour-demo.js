@@ -47,14 +47,10 @@ manual.tourGuiado = (function() {
     ]
   };
 
-  function init() {
-    window.setTimeout(function(){
-      locastyle.guidedTour.init(configTour);
-    }, 1000)
-  }
 
-  return {
-    init:init
-  };
+  window.setTimeout(function(){
+    locastyle.guidedTour.init(configTour);
+  }, 1000)
+
 
 }());
