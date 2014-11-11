@@ -249,7 +249,7 @@ tr.active .actionsTable { display: none; }
   z-index: 1;
 }
 
-.notification .valueNotify { 
+.notification .valueNotify {
   top: -2px;
   margin-left: 5px;
 }
@@ -285,7 +285,7 @@ tr.active .actionsTable { display: none; }
 
 .valueNotify.empty:before { border-right: 5px solid #cdcdcd; }
 
-.boxCollapse .tabs {
+.boxCollapse.notification .tabs {
   background: none;
   position: absolute;
   top: -42px;
@@ -293,7 +293,7 @@ tr.active .actionsTable { display: none; }
   z-index: 2;
 }
 
-.boxCollapse .tab-content {
+.boxCollapse.notification .tab-content {
   border: none;
   border-radius: 3px;
   -moz-border-radius: 3px;
@@ -301,9 +301,9 @@ tr.active .actionsTable { display: none; }
   margin-bottom: 0;
 }
 
-.boxCollapse .tabs li a:after,
-.boxCollapse .tabs li.active a:after,
-.boxCollapse .tabs li a:hover:after{ background: none; }
+.boxCollapse.notification .tabs li a:after,
+.boxCollapse.notification .tabs li.active a:after,
+.boxCollapse.notification .tabs li a:hover:after{ background: none; }
 
 /* Fix para collpases com toolip dentro (use com cuidado) */
 
