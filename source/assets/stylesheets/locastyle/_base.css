@@ -1549,25 +1549,54 @@ ol p{font-size: inherit;}
   width: 20%;
 }
 .boxList .boxListContent{
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
   padding: 10px;
 }
 
 /*Box Option*/
-.boxOption {
-  margin-bottom: 10px;
-}
-.boxOption label{
+.boxOption { margin-bottom: 10px; }
+
+.boxOption label {
   font-weight: normal;
   display: inline-block;
 }
-.boxOption .boxOptionLabel{
-  border: 1px solid #E5E5E5;
+
+.boxOption .boxOptionLabel {
+  border: 1px solid #e5e5e5;
   border-radius: 5px;
   display: block;
   padding: 15px 12px;
   position: relative;
 }
+
+.boxOption.noArrow .active .boxOptionLabel:before,
+.boxOption.noArrow .active .boxOptionLabel:after {
+  display: none;
+}
+
+.boxOption.arrow .active .boxOptionLabel:before,
+.boxOption.arrow .active .boxOptionLabel:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+
+.boxOption.arrow .active .boxOptionLabel:before {
+  margin-left: -17px;
+  bottom: -18px;
+  border: 9px solid transparent;
+  border-top-color: #c6c6c6;
+}
+
+.boxOption.arrow .active .boxOptionLabel:after {
+  margin-left: -15px;
+  bottom: -14px;
+  border: 7px solid transparent;
+  border-top-color: #e5e5e5;
+}
+
 .boxOption input,
 .boxOption img{
   display: inline-block;
