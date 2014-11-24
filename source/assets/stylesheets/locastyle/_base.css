@@ -1569,8 +1569,8 @@ ol p{font-size: inherit;}
   position: relative;
 }
 
-.boxOption.noArrow .active .boxOptionLabel:before,
-.boxOption.noArrow .active .boxOptionLabel:after {
+.boxOption .active .boxOptionLabel:before,
+.boxOption .active .boxOptionLabel:after {
   display: none;
 }
 
