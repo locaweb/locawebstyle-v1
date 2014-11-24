@@ -1577,6 +1577,7 @@ ol p{font-size: inherit;}
 .boxOption.arrow .active .boxOptionLabel:before,
 .boxOption.arrow .active .boxOptionLabel:after {
   content: " ";
+  display: inline-block;
   position: absolute;
   left: 50%;
   width: 0;
