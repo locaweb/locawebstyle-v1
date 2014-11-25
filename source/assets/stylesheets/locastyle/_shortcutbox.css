@@ -23,7 +23,6 @@
   background: -ms-linear-gradient(top,  #f8f8f8 0%,#c6c6c6 100%);
   background: linear-gradient(to bottom,  #f8f8f8 0%,#c6c6c6 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#c6c6c6',GradientType=0 );
-
 }
 .shortcutBox div > a,
 .shortcutBox div{
@@ -50,10 +49,7 @@
 }
 .shortcutBox.maxBox div > .lnkCoverAll{padding: inherit;}
 .shortcutBox.maxBox div > .btn.btn-large{padding: 10px 19px 10px 14px;}
-.shortcutBox.maxBox div > .btn{padding: 4px 12px; display: inline}
-
-
-
+.shortcutBox.maxBox div > .btn{padding: 4px 12px; display: inline }
 
 /** Hover padrão **/
 .shortcutBox div:hover {
@@ -73,7 +69,6 @@
 .shortcutBox > div.active h3:before {opacity: 1;}
 
 .shortcutBox .span3 {width: 22.5%; margin-left: 0;}
-
 .shortcutBox div:last-child {margin-right: 0;}
 
 .shortcutBox div h3, .shortcutBox div h3:first-child {

@@ -1549,25 +1549,55 @@ ol p{font-size: inherit;}
   width: 20%;
 }
 .boxList .boxListContent{
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
   padding: 10px;
 }
 
 /*Box Option*/
-.boxOption {
-  margin-bottom: 10px;
-}
-.boxOption label{
+.boxOption { margin-bottom: 10px; }
+
+.boxOption label {
   font-weight: normal;
   display: inline-block;
 }
-.boxOption .boxOptionLabel{
-  border: 1px solid #E5E5E5;
+
+.boxOption .boxOptionLabel {
+  border: 1px solid #e5e5e5;
   border-radius: 5px;
   display: block;
   padding: 15px 12px;
   position: relative;
 }
+
+.boxOption .active .boxOptionLabel:before,
+.boxOption .active .boxOptionLabel:after {
+  display: none;
+}
+
+.boxOption.arrow .active .boxOptionLabel:before,
+.boxOption.arrow .active .boxOptionLabel:after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+
+.boxOption.arrow .active .boxOptionLabel:before {
+  margin-left: -16px;
+  bottom: -18px;
+  border: 9px solid transparent;
+  border-top-color: #c6c6c6;
+}
+
+.boxOption.arrow .active .boxOptionLabel:after {
+  margin-left: -14px;
+  bottom: -14px;
+  border: 7px solid transparent;
+  border-top-color: #e5e5e5;
+}
+
 .boxOption input,
 .boxOption img{
   display: inline-block;
@@ -1613,4 +1643,46 @@ ol p{font-size: inherit;}
   position: absolute;
   top: -10px;
   left: auto;
+}
+
+/* SimpleBox */
+.simpleBox .simpleBoxContent {
+  padding: 25px 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  text-align: center;
+  background: #f2f2f2;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #f2f2f2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2f2f2));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 100%);
+}
+
+.simpleBox .simpleBoxContent p {
+  color: #545454;
+  margin-bottom: 20px;
+}
+
+.simpleBoxTitle {
+  color: #2a2a2a;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.simpleBox small {
+  margin-top: 10px;
+  font-size: 10px;
+  color: #767676;
+  display: block;
+  padding: 0 41px;
+  line-height: 12px;
+  margin-top: -7px;
+}
+
+.simpleBox img {
+  width: 169px;
+  height: 79px;
+  margin-bottom: 20px;
 }
