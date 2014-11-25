@@ -1586,14 +1586,14 @@ ol p{font-size: inherit;}
 
 .boxOption.arrow .active .boxOptionLabel:before {
   margin-left: -16px;
-  bottom: -16px;
+  bottom: -18px;
   border: 9px solid transparent;
   border-top-color: #c6c6c6;
 }
 
 .boxOption.arrow .active .boxOptionLabel:after {
   margin-left: -14px;
-  bottom: -12px;
+  bottom: -14px;
   border: 7px solid transparent;
   border-top-color: #e5e5e5;
 }
