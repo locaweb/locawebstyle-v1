@@ -1491,9 +1491,15 @@ ol p{font-size: inherit;}
 }
 .boxList header{
   border-bottom: 1px solid #E5E5E5;
-  overflow: hidden;
   padding: 10px;
 }
+
+.boxList header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .boxList .titleBoxList[class*="ico-"] ~ .btn{
   margin-top: 10px;
 }
