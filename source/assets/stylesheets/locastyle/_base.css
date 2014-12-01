@@ -1494,7 +1494,8 @@ ol p{font-size: inherit;}
   padding: 10px;
 }
 
-.boxList img {
+.boxList header .btn-group { margin-left: 5px; }
+
 .boxList header img {
   float: left;
   margin: 5px 10px 0 0;
