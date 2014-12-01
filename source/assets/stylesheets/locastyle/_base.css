@@ -1494,6 +1494,12 @@ ol p{font-size: inherit;}
   padding: 10px;
 }
 
+.boxList img {
+.boxList header img {
+  float: left;
+  margin: 5px 10px 0 0;
+}
+
 .boxList header:after {
   content: "";
   display: block;
