@@ -1491,9 +1491,22 @@ ol p{font-size: inherit;}
 }
 .boxList header{
   border-bottom: 1px solid #E5E5E5;
-  overflow: hidden;
   padding: 10px;
 }
+
+.boxList header .btn-group { margin-left: 5px; }
+
+.boxList header img {
+  float: left;
+  margin: 5px 10px 0 0;
+}
+
+.boxList header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .boxList .titleBoxList[class*="ico-"] ~ .btn{
   margin-top: 10px;
 }
@@ -1684,5 +1697,10 @@ ol p{font-size: inherit;}
 .simpleBox img {
   width: 169px;
   height: 79px;
+  margin-bottom: 20px;
+}
+
+.simpleBox .simpleBoxContent [class*="ico-"]:before {
+  font-size: 90px;
   margin-bottom: 20px;
 }
