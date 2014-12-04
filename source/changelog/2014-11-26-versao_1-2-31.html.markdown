@@ -5,6 +5,6 @@ tags:
 ---
 **O que tem de novo?**
 
-\- Novo elemento Box Simples (simpleBox) [veja documentação](http://locaweb.github.io/locawebstyle-v1/manual/elementos#simpleBox/)
+\- Novo elemento Box Simples (simpleBox) [veja documentação](http://locaweb.github.io/locawebstyle-v1/manual/elementos#simpleBox1/)
 
 \- Seta no box selecionável [veja documentação](http://locaweb.github.io/locawebstyle-v1/manual/aplicacoes/box-selecionavel/)
