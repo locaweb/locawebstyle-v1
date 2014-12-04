@@ -1,0 +1,8 @@
+---
+title: versão 1.2.30
+date: 2014-11-12 16:15 UTC
+tags:
+---
+**Corrigimos**
+
+\- Ajustando abas dentro de collapse quando houver notificações [Veja commit](https://github.com/locaweb/locawebstyle-v1/commit/2e218309873edd677d74a0e442cc65add78569b7)
