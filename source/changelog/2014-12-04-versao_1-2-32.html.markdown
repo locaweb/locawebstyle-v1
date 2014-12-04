@@ -1,0 +1,16 @@
+---
+title: versão 1.2.32
+date: 2014-12-04 15:51 UTC
+tags:
+---
+**O que tem de novo?**
+
+\- Adicionando novos icones <code>ico-cloud-on-demand</code>, <code>ico-cloud-pro</code> e <code>ico-server-dedicated</code> <br> [veja documentação](http://locaweb.github.io/locawebstyle-v1/manual/componentes/icones/)
+
+**Ajustes**
+
+\- Removendo <code>overflow: hidden</code> do boxList header, caso houver um dropdown dentro
+
+\- Ajustando estilo de imagens no boxList header [veja documentação](http://localhost:4567/manual/aplicacoes/box-com-colunas)
+
+\- Ajustando estilo de icones dentro do simpleBox [veja documentação](http://locaweb.github.io/locawebstyle-v1/manual/elementos#simpleBox2/)
