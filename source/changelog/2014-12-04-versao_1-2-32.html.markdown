@@ -14,3 +14,5 @@ tags:
 \- Ajustando estilo de imagens no boxList header [veja documentação](http://localhost:4567/manual/aplicacoes/box-com-colunas)
 
 \- Ajustando estilo de icones dentro do simpleBox [veja documentação](http://locaweb.github.io/locawebstyle-v1/manual/elementos#simpleBox2/)
+
+\- Atualização so Select2 para versão 3.5.2 [site do plugin](https://ivaynberg.github.io/select2/)
