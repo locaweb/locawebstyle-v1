@@ -1583,12 +1583,10 @@ ol p{font-size: inherit;}
 }
 
 .boxOption .active .boxOptionLabel:before,
-.boxOption .active .boxOptionLabel:after {
-  display: none;
-}
+.boxOption .active .boxOptionLabel:after { display: none; }
 
-.boxOption.arrow .active .boxOptionLabel:before,
-.boxOption.arrow .active .boxOptionLabel:after {
+.boxOption .active .boxOptionLabel.arrow:before,
+.boxOption .active .boxOptionLabel.arrow:after {
   content: " ";
   display: inline-block;
   position: absolute;
@@ -1597,14 +1595,14 @@ ol p{font-size: inherit;}
   height: 0;
 }
 
-.boxOption.arrow .active .boxOptionLabel:before {
+.boxOption .active .boxOptionLabel.arrow:before {
   margin-left: -16px;
   bottom: -18px;
   border: 9px solid transparent;
   border-top-color: #c6c6c6;
 }
 
-.boxOption.arrow .active .boxOptionLabel:after {
+.boxOption .active .boxOptionLabel.arrow:after {
   margin-left: -14px;
   bottom: -14px;
   border: 7px solid transparent;
