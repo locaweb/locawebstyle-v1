@@ -16,6 +16,12 @@
   font: 33px LacunaRegular, verdana, arial, tahoma, sans-serif;
   position: relative;
 }
+
+.serviceName a[class*="ico-"]:before {
+  font-size: 70px;
+  margin-right: 10px;
+}
+
 .serviceName a {
   text-decoration: none;
   color: #777;
