@@ -74,7 +74,7 @@
   font-family: LacunaRegular, verdana, arial, tahoma, sans-serif;
 }
 
-.serviceNameDashboard a:first-of-type { float: left; }
+.serviceNameDashboard a:first-child { float: left; }
 
 .serviceNameDashboard a span[class*="ico-"]:before {
   font-size: 70px;
