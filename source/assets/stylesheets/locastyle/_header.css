@@ -16,8 +16,22 @@
   font: 33px LacunaRegular, verdana, arial, tahoma, sans-serif;
   position: relative;
 }
-.serviceName a {text-decoration: none;  color: #777; margin-left: -4px;}
-.serviceName a:hover {text-decoration: none; opacity: 0.7;}
+
+.serviceName a[class*="ico-"]:before {
+  font-size: 70px;
+  margin-right: 10px;
+}
+
+.serviceName a {
+  text-decoration: none;
+  color: #777;
+  margin-left: -4px;
+}
+
+.serviceName a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
 
 .serviceName span {
   display: block;
@@ -26,21 +40,23 @@
   color: #727272;
   font-size: 13px;
 }
+
 .serviceName .betalink {
   position: absolute;
   left: auto;
   top: 30px;
   right: -30px;
 }
-.serviceName.ellipsis{
-  width: 600px;
-}
-.lnkOldpanel{
+
+.serviceName.ellipsis { width: 600px; }
+
+.lnkOldpanel {
   position: absolute;
   top: 50px;
   right: 0;
 }
-.betalink{
+
+.betalink {
   background: url(../images/ico-beta.png) 0 0 no-repeat;
   display: inline-block;
   height: 20px;
@@ -49,6 +65,30 @@
   position: relative;
   top: 3px;
   width: 41px;
+}
+
+.serviceNameIdentifier {
+  overflow: hidden;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-family: LacunaRegular, verdana, arial, tahoma, sans-serif;
+}
+
+.serviceNameIdentifier a:first-child { float: left; }
+
+.serviceNameIdentifier [class*="ico-"]:before {
+  font-size: 70px;
+  line-height: 1;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px dotted #ccc;
+}
+
+.serviceNameIdentifier small {
+  display: block;
+  font-family: UbuntuMedium, Ubuntu, arial, verdana, tahoma, sans-serif;
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 /*** MENU PRINCIPAL
@@ -72,17 +112,21 @@
   position: relative;
 }
 
-#menuPrincipal > ul:after {content: " "; display: block; clear: both;}
+#menuPrincipal > ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
 
 #menuPrincipal > ul > li {
   padding: 0 5px;
   float: left;
   position: relative;
-  background: #FFF url(../images/dotMenuLi.gif) no-repeat right center;
+  background: #fff url(../images/dotMenuLi.gif) no-repeat right center;
 }
 
-#menuPrincipal > ul > li:first-child {padding-left: 0;}
-#menuPrincipal > ul > li:last-child {background-image: none;}
+#menuPrincipal > ul > li:first-child { padding-left: 0; }
+#menuPrincipal > ul > li:last-child { background-image: none; }
 
 #menuPrincipal > ul > li > a:after {
   position: absolute;
@@ -111,8 +155,13 @@
   -o-transition: all .1s ease-in;
   transition: all .1s ease-in;
 }
-#menuPrincipal a{outline: none;}
-#menuPrincipal > ul > li > a:hover {color: #666; background-color: transparent;}
+
+#menuPrincipal a { outline: none; }
+
+#menuPrincipal > ul > li > a:hover {
+  color: #666;
+  background-color: transparent;
+}
 
 #menuPrincipal a.ico-home:before {
   float: right;
@@ -139,10 +188,10 @@
 }
 #menuPrincipal > ul > li.selected > a:hover,
 #menuPrincipal > ul > li.selected.parent > a:hover,
-#menuPrincipal > ul > li.selected.parent > a{
-  color: #fff;
-}
-#menuPrincipal .parent:hover > a {box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, 0.2);}
+#menuPrincipal > ul > li.selected.parent > a { color: #fff; }
+
+#menuPrincipal .parent:hover > a { box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, 0.2); }
+
 #menuPrincipal .parent > a:hover,
 #menuPrincipal .parent:hover > a,
 #menuPrincipal ul li.parent.focus > a {
@@ -153,6 +202,7 @@
   border: 1px solid #c7c7c7;
   border-bottom: 1px solid #FFF;
 }
+
 #menuPrincipal .parent:after {
   content: " ";
   display: block;
@@ -162,19 +212,22 @@
   position: relative;
   z-index: 2;
 }
-#menuPrincipal .parent.selected:after{
-  background-color: transparent;
-}
 
-#menuPrincipal .parent {outline: none;}
-#menuPrincipal .parent.focus ul{
-  opacity: 1; visibility: visible;
+#menuPrincipal .parent.selected:after { background-color: transparent; }
+
+#menuPrincipal .parent { outline: none; }
+
+#menuPrincipal .parent.focus ul {
+  opacity: 1;
+  visibility: visible;
 }
 
 #menuPrincipal > ul > li:hover ul,
 #menuPrincipal > ul > li:active ul {
-  opacity: 1; visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
+
 #menuPrincipal ul li ul {
   opacity: 0;
   border: 1px solid #c7c7c7;
@@ -197,15 +250,12 @@
   -o-transition: all .1s ease-in;
   transition: all .1s ease-in;
 }
-#menuPrincipal ul li [class*="ico-"] ~ ul{
-  left: 0;
-}
-#menuPrincipal ul li:hover{
-  z-index: 4
-}
-#menuPrincipal ul li.focus{
-  z-index: 3;
-}
+
+#menuPrincipal ul li [class*="ico-"] ~ ul { left: 0; }
+
+#menuPrincipal ul li:hover{ z-index: 4 }
+
+#menuPrincipal ul li.focus{ z-index: 3; }
 
 #menuPrincipal ul li ul li a {
   font: 13px verdana, arial, tahoma, sans-serif;
@@ -215,8 +265,9 @@
   text-decoration: none;
   display: block;
 }
+
 #menuPrincipal ul li ul li a:hover,
-#menuPrincipal ul li ul li a:focus {background:#e9e9e9;}
+#menuPrincipal ul li ul li a:focus { background:#e9e9e9; }
 
 /***
 **** Opção do menu destacada como botão
