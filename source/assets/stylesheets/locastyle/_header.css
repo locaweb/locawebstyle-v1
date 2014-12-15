@@ -67,16 +67,16 @@
   width: 41px;
 }
 
-.serviceNameDashboard {
+.serviceNameIdentifier {
   overflow: hidden;
   padding-top: 25px;
   padding-bottom: 15px;
   font-family: LacunaRegular, verdana, arial, tahoma, sans-serif;
 }
 
-.serviceNameDashboard a:first-child { float: left; }
+.serviceNameIdentifier a:first-child { float: left; }
 
-.serviceNameDashboard a span[class*="ico-"]:before {
+.serviceNameIdentifier [class*="ico-"]:before {
   font-size: 70px;
   line-height: 1;
   padding-right: 10px;
@@ -84,7 +84,7 @@
   border-right: 1px dotted #ccc;
 }
 
-.serviceNameDashboard small {
+.serviceNameIdentifier small {
   display: block;
   font-family: UbuntuMedium, Ubuntu, arial, verdana, tahoma, sans-serif;
   font-size: 12px;
