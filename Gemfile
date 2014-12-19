@@ -8,3 +8,5 @@ gem "middleman-blog"
 gem "middleman-livereload", :github => "middleman/middleman-livereload"
 gem "nokogiri"
 gem "therubyracer"
+
+gem 'rack-cors', require: false
