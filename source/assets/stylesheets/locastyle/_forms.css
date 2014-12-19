@@ -402,7 +402,4 @@ input[type="image"], input[type="checkbox"], input[type="radio"] {margin-top: 0;
   border-left: none;
 }
 
-.select2-container .select2-choice div b {background: url(../images/setaIdentBaixo.png) no-repeat center;}
-.select2-dropdown-open .select2-choice div b {background: url(../images/setaIdentTop.png) no-repeat center;}
-
 .select2-search {margin-top: 10px;}
