@@ -297,6 +297,9 @@ input[type="image"], input[type="checkbox"], input[type="radio"] {margin-top: 0;
   padding: 15px 0 10px;
   min-height: 30px;
 }
+
+.tabs .simpleFilter { padding: 3px 0; }
+
 .simpleFilter:after {content: " "; display: block; clear: both;}
 
 .tab-pane .simpleFilter {padding-top: 5px;}
