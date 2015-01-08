@@ -512,7 +512,7 @@ h6[class^="ico-"]:before {
 .ico-update-calendar:before { content: "\e605"; }
 .ico-block-user:before { content: "\e606"; }
 .ico-target:before { content: "\e607"; }
-.ico-hours:before { content: "\e608"; }
+.ico-daily:before { content: "\e608"; }
 .ico-monthly:before { content: "\e609"; }
 .ico-weekly:before { content: "\e60a"; }
 
