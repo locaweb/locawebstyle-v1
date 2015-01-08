@@ -1,5 +1,5 @@
 ---
-title: versão 1.2.30
+title: Versão 1.2.30
 date: 2014-11-12 16:15 UTC
 tags:
 ---
