@@ -298,7 +298,10 @@ input[type="image"], input[type="checkbox"], input[type="radio"] {margin-top: 0;
   min-height: 30px;
 }
 
-.tabs .simpleFilter { padding: 3px 0; }
+.tabs .simpleFilter { 
+  padding: 3px 0;
+  border-bottom: none;
+}
 
 .simpleFilter:after {content: " "; display: block; clear: both;}
 
