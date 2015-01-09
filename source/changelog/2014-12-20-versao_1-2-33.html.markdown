@@ -1,0 +1,15 @@
+---
+title: Versão 1.2.33
+date: 2014-12-20 00:00 UTC
+tags:
+---
+**O que tem de novo?**
+
+\- Header com identificador (classe .serviceNameIdentifier)
+
+**Ajustes**
+
+\- Ajuste de na classe .serviceName quando houver ícone
+
+\- Removendo a classe Arrow do elemnto boxOption e inserindo no filho (boxOptionLabel)
+

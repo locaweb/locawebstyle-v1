@@ -1,0 +1,17 @@
+---
+title: Versão 1.2.34
+date: 2015-01-08 15:00 UTC
+tags:
+---
+
+**O que tem de novo?**
+
+\- Novos Icones (<code>.ico-target</code>, <code>.ico-daily</code>, <code>.ico-monthly</code> e <code>.ico-weekly</code>)
+
+\- Criando classes funcionais para definir min-height (<code>.minHeight240</code> para 240px e <code>.minHeight280</code> para 280px)
+
+**Ajustes**
+
+\- Atualizando imagens e CSS do plugin Select2
+
+\- Ajustando simpleFilter quando estiver dentro de tabs
