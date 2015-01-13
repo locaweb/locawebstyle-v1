@@ -373,7 +373,6 @@ Locastyle = (function() {
 			});
 		},
 
-
 		elementChecked: function(dom_scope) {
 			$('[data-element]',dom_scope).each(function(){
 				if ($(this).attr('checked') == 'checked') {
@@ -404,11 +403,11 @@ Locastyle = (function() {
 		},
 
 		classToggle: function(dom_scope) {
-		    $('[data-classtoggle]', dom_scope).on('click', function(e){
-		      e.preventDefault();
-		      var classes = $(this).data('classtoggle').split(',');
-		      $(this).toggleClass(classes[0]).toggleClass(classes[1]);
-		    });
+			$('[data-classtoggle]', dom_scope).on('click', function(){
+				var classes = $(this).data('classtoggle').split(',');
+				var target = $(this).data('target') || $(this);
+				$(target).toggleClass(classes[0]).toggleClass(classes[1]);
+			});
 		},
 
 		arrowDinamic: function(dom_scope, el){
