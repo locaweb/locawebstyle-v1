@@ -1702,3 +1702,8 @@ ol p{font-size: inherit;}
   font-size: 90px;
   margin-bottom: 20px;
 }
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
