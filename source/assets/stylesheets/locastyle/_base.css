@@ -1693,11 +1693,7 @@ ol p{font-size: inherit;}
   margin-top: -7px;
 }
 
-.simpleBox img {
-  width: 169px;
-  height: 79px;
-  margin-bottom: 20px;
-}
+.simpleBox img { margin-bottom: 20px; }
 
 .simpleBox .simpleBoxContent [class*="ico-"]:before {
   font-size: 90px;
