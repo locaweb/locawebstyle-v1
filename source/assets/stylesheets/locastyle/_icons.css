@@ -515,7 +515,8 @@ h6[class^="ico-"]:before {
 .ico-daily:before { content: "\e608"; }
 .ico-monthly:before { content: "\e609"; }
 .ico-weekly:before { content: "\e60a"; }
-
+.ico-pizza-1:before { content: "\e60b"; }
+.ico-pizza-2:before { content: "\e60c"; }
 
 [class^="icon-"], [class*=" icon-"],
 li [class^="icon-"], li [class*=" icon-"] {
