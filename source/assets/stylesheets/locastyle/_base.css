@@ -1703,7 +1703,7 @@ ol p{font-size: inherit;}
 .disabled {
   opacity: 0.5;
   pointer-events: none;
-
+}
 /* Login Page */
 
 .loginParent {
