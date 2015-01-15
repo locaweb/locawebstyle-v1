@@ -1,0 +1,93 @@
+/**
+*** Login Page 
+**/
+
+.loginParent {
+  background-color: #f3f3f3;
+  height: inherit;
+  display: table;
+  width: 100%;
+}
+
+.loginInner {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+
+.loginBox {
+  width: 450px;
+  display: inline-block;
+  border: 1px solid #c9caca;
+  background-color: white;
+  padding: 30px 40px 15px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.loginBox .forgotPassword {
+  color: #828282;
+  font-size: 12px;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #828282;
+}
+
+.loginBox .forgotPassword:hover,
+.loginBox .forgotPassword:focus { border-bottom: none; }
+
+.loginBox .control-group label { color: #666; }
+
+.loginBox .control-group input {
+  width: 96.4%;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.loginBox .control-group input[type="password"]::-webkit-input-placeholder {
+  font-style: italic;
+  color: #666;
+  font-weight: normal;
+}
+
+.loginBox .control-group input[type="password"]:-ms-input-placeholder {
+  font-style: italic;
+  color: #666;
+  font-weight: normal;
+}
+
+.loginBox .control-group input[type="password"]::-moz-placeholder {
+  font-style: italic;
+  color: #666;
+  font-weight: normal;
+}
+
+.loginBox .control-group input[type="password"]:-moz-placeholder {
+  font-style: italic;
+  color: #666;
+  font-weight: normal;
+}
+
+.loginBox .form-actions {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.loginBox .form-actions .btn { 
+  margin-top: 20px;
+  margin-bottom: 0; 
+}
+
+.loginBox .loginLogo {
+  color: #333333;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.loginBox .loginLogo img { vertical-align: bottom; }
