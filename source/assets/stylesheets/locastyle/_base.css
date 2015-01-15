@@ -1669,6 +1669,7 @@ ol p{font-size: inherit;}
   background: -o-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%);
   background: -ms-linear-gradient(top,  #ffffff 0%,#f2f2f2 100%);
   background: linear-gradient(to bottom,  #ffffff 0%,#f2f2f2 100%);
+  margin-bottom: 20px;
 }
 
 .simpleBox .simpleBoxContent p {
@@ -1692,11 +1693,7 @@ ol p{font-size: inherit;}
   margin-top: -7px;
 }
 
-.simpleBox img {
-  width: 169px;
-  height: 79px;
-  margin-bottom: 20px;
-}
+.simpleBox img { margin-bottom: 20px; }
 
 .simpleBox .simpleBoxContent [class*="ico-"]:before {
   font-size: 90px;
