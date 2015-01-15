@@ -159,7 +159,9 @@ table.txtRight td, table.txtRight th {text-align: right;}
 **/
 hr, hr.sepDot {border: none; border-bottom: 1px solid #e5e5e5; background: none; display: block; margin: 15px 0;}
 
-/** MIN-HEIGHT **/
+/**
+*** MIN-HEIGHT 
+**/
 .minHeight240 { min-height: 240px; }
 .minHeight280 { min-height: 280px; }
 .minHeight300 { min-height: 300px; }
