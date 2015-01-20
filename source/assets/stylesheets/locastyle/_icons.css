@@ -25,6 +25,11 @@
   top: -2px;
 }
 
+.btn[class*="ico-"]:empty:before  {
+  margin: 0;
+  padding-left: 3px;
+}
+
 .btn[class^="ico-"]:before, .btn[class*="ico-"]:before {top: 0;}
 
 h1[class^="ico-"]:before,
