@@ -207,8 +207,7 @@ h6 .lnkArrow {
 .shortcutBox + .lnkArrow {position: relative; top: -5px;}
 
 .forceClass .lnkArrowWhite,
-.forceClass .lnkArrowWhite:hover
-{color: #fff;}
+.forceClass .lnkArrowWhite:hover { color: #fff; }
 
 /** BOX COM FUNDO CINZA
 *** geralmente tem um collapseGroup dentro
@@ -221,7 +220,12 @@ h6 .lnkArrow {
   padding-bottom: 3px;
   margin-bottom: 40px;
 }
-.boxGray:after {content: " "; display: block; clear: both;}
+ 
+.boxGray:after {
+  content: " "; 
+  display: block;
+  clear: both;
+}
 
 .boxGray h2 {
   font-size: 22px;
@@ -235,17 +239,14 @@ h6 .lnkArrow {
   margin: 0;
   padding: 0 15px 11px 15px;
 }
-.boxGray h2 + p {margin-top: 10px;}
+
+.boxGray h2 + p { margin-top: 10px; }
 
 /** DENTRO DO BOX
 **/
-.boxGray .boxGrayInner {
-  padding: 0 15px;
-}
+.boxGray .boxGrayInner { padding: 0 15px; }
 
-.boxGray .boxGrayInner p {
-  padding: 0 0 11px;
-}
+.boxGray .boxGrayInner p { padding: 0 0 11px; }
 
 /**
 *** PAGINACAO e NAVEGACAO
