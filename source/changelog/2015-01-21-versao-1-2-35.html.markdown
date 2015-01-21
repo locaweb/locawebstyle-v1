@@ -1,0 +1,9 @@
+---
+title: Versão 1.2.35
+date: 2015-01-21 15:57 UTC
+tags:
+---
+
+**Ajustes**
+
+\- Ajuste no botão sem texto, apenas com ícone.
