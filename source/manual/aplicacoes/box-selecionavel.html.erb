@@ -221,4 +221,65 @@ menu_page: sidebar-aplicacoes.erb
 &lt;/div&gt;
 </pre>
 
+<h2>Box selecionável com ícones</h2>
+<p>Para adicionar o icone, basta inserir no lugar da imagem.</p>
+<div class="collapsedRadios">
+  <header class="boxOption row">
+    <div class="span4" data-checked="true">
+      <label class="boxOptionLabel" >
+        <input type="radio" class="boxOptionChecked" data-element="true" data-target="#box8" data-toggle="collapse" name="option">
+        <span class="ico-pizza-1"></span>
+        <span class="boxOptionInfo">
+          <span class="boxOptionTitle">Opção 1</span>
+        </span>
+      </label>
+    </div>
+    <div class="span4" data-checked="true">
+      <label class="boxOptionLabel" >
+        <input type="radio" class="boxOptionChecked" data-element="true" data-target="#box9" data-toggle="collapse" name="option">
+        <span class="ico-pizza-2"></span>
+        <span class="boxOptionInfo">
+          <span class="boxOptionTitle">Opção 2</span>
+        </span>
+      </label>
+    </div>
+  </header>
+  <div id="box8" class="collapse">
+    <div class="boxDinamicArrow">Primeiro conteúdo</div>
+  </div>
+  <div id="box9" class="collapse">
+    <div class="boxDinamicArrow">Segundo conteúdo</div>
+  </div>
+</div>
+<pre class="lang-html prettyprint linenums">
+&lt;div class="collapsedRadios"&gt;
+  &lt;header class="boxOption row"&gt;
+    &lt;div class="span4" data-checked="true"&gt;
+      &lt;label class="boxOptionLabel" &gt;
+        &lt;input type="radio" class="boxOptionChecked" data-element="true" data-target="#box8" data-toggle="collapse" name="option"&gt;
+        &lt;span class="ico-pizza-1"&gt;&lt;/span&gt;
+        &lt;span class="boxOptionInfo"&gt;
+          &lt;span class="boxOptionTitle"&gt;CentOS&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="span4" data-checked="true"&gt;
+      &lt;label class="boxOptionLabel" &gt;
+        &lt;input type="radio" class="boxOptionChecked" data-element="true" data-target="#box9" data-toggle="collapse" name="option"&gt;
+        &lt;span class="ico-pizza-2"&gt;&lt;/span&gt;
+        &lt;span class="boxOptionInfo"&gt;
+          &lt;span class="boxOptionTitle"&gt;Debian&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div id="box8" class="collapse"&gt;
+    &lt;div class="boxDinamicArrow"&gt;Primeiro conteúdo&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id="box9" class="collapse"&gt;
+    &lt;div class="boxDinamicArrow"&gt;Segundo conteúdo&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
 </article>
