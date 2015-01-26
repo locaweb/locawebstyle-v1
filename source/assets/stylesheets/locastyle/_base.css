@@ -1611,10 +1611,14 @@ ol p{font-size: inherit;}
 }
 
 .boxOption input,
-.boxOption img{
+.boxOption img {
   display: inline-block;
   margin-right: 3px;
   margin-left: 3px;
+}
+
+.boxOption [class*="ico-"]:before {
+  font-size: 37px;
 }
 
 .boxOption .boxOptionInfo{
