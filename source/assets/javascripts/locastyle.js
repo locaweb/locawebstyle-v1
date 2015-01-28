@@ -5,6 +5,7 @@
 //= require locastyle/_hopscotch
 //= require locastyle/_guided_tour
 //= require locastyle/_equal_height
+//= require locastyle/_duplicate_form
 //= require locastyle/_password_strength
 //= require locastyle/_step_form
 //= require locastyle/_sum_values
