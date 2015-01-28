@@ -5,4 +5,5 @@ $(window).load(function() {
   locastyle.passwordStrength.init();
   locastyle.sumValues.init();
   locastyle.equalHeight.init();
+  locastyle.duplicateForm.init();
 });
