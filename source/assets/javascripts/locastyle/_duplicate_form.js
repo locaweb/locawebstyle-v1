@@ -34,6 +34,10 @@ Locastyle.prototype.duplicateForm = (function() {
     });
   }
 
+  function cleanLastRow() {
+    $(config.selectors.form).last().find('input, select, textarea').val('');
+  }
+
   function addValueToDataForm() {
     $(config.selectors.form).each(function(i, el) {
       $(el).attr('data-form', i);
