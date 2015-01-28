@@ -52,7 +52,7 @@ Locastyle.prototype.duplicateForm = (function() {
     $(config.actions.remove).on('click', function(el) {
       el.preventDefault();
       if($(config.selectors.form).length > 1) {
-        $(this).parent().parent().remove();
+        $(this).parents().eq(1).remove();
       }
       verifyFormNumbers();
     });
