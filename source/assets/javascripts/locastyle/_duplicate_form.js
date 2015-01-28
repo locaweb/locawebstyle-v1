@@ -26,8 +26,11 @@ Locastyle.prototype.duplicateForm = (function() {
     $(config.actions.duplicate).on('click', function(el) {
       el.preventDefault();
       var cloneLast = $(config.selectors.form).last().clone();
-      cloneLast.appendTo(config.selectors.parent);
 
+      cloneLast.appendTo(config.selectors.parent);
+      $(config.selectors.form).last().find('input').first().focus();
+
+      cleanLastRow();
       addValueToDataForm();
       verifyFormNumbers();
       removeForm();
