@@ -1,0 +1,63 @@
+---
+title: Formulários - Multiplicando Campos
+menu_page: sidebar-formularios.erb
+---
+
+<article class="text">
+  <header>
+    <h1>Multiplicando Formulários</h1>
+    <h3>Como multiplicar campos dentro de um formulários</h3>
+  </header>
+
+  <div class="example">
+    <form action="#" class="form">
+      <div class="row">
+        <div data-form-parent class="dInlineBlock">
+          <div class="dInlineBlock" data-form>
+            <div class="control-group span3">
+              <label for="type" class="dNone">Select</label>
+              <select name="" id="">
+                <option value="1">Opção 1</option>
+                <option value="1">Opção 2</option>
+              </select>
+            </div>
+            <div class="control-group span6">
+              <label for="" class="dNone">Campo</label>
+              <input type="text" class="span6" placeholder="Campo">
+            </div>
+            <div class="control-group span2">
+              <a href="#" class="btn ico-hifen dNone" data-remove-form></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn" data-duplicate-form>Adicionar</a>
+    </form>
+  </div>
+
+<pre class="lang-html prettyprint linenums">
+&lt;form action="#" class="form"&gt;
+  &lt;div class="row"&gt;
+    &lt;div data-form-parent class="dInlineBlock"&gt;
+      &lt;div class="dInlineBlock" data-form&gt;
+        &lt;div class="control-group span3"&gt;
+          &lt;label for="type" class="dNone"&gt;Select&lt;/label&gt;
+          &lt;select&gt;
+            &lt;option value="1"&gt;Opção 1&lt;/option&gt;
+            &lt;option value="1"&gt;Opção 2&lt;/option&gt;
+          &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class="control-group span6"&gt;
+          &lt;label class="dNone"&gt;Campo&lt;/label&gt;
+          &lt;input type="text" class="span6" placeholder="Campo"&gt;
+        &lt;/div&gt;
+        &lt;div class="control-group span2"&gt;
+          &lt;a href="#" class="btn ico-hifen dNone" data-remove-form&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;a href="#" class="btn" data-duplicate-form&gt;Adicionar&lt;/a&gt;
+&lt;/form&gt;
+</pre>
+</article>
