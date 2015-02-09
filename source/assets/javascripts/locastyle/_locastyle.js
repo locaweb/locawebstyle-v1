@@ -41,6 +41,7 @@ Locastyle = (function() {
 			this.classToggle(dom_scope);
 			this.boxDinamicArrow(dom_scope);
 			this.arrowDinamic(dom_scope, '[data-element]:checked');
+			this.addLsIdentification();
 		},
 
 		popover: function(dom_scope){
@@ -420,6 +421,10 @@ Locastyle = (function() {
 
 		boxDinamicArrow: function(dom_scope){
 			$('.boxDinamicArrow', dom_scope).prepend('<span class="arrowTop"/>');
+		},
+
+		addLsIdentification: function(){
+			$('html').addClass('ls-v1');
 		}
 
 	}
