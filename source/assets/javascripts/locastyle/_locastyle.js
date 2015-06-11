@@ -231,7 +231,9 @@ Locastyle = (function() {
 		},
 
 		initCustomSelect: function(dom_scope){
-			$("select.customSelect", dom_scope).select2();
+			$("select.customSelect", dom_scope).select2({
+				language: 'pt-BR'
+			});
 		},
 
 		notificationInfoSet: function(dom_scope){
