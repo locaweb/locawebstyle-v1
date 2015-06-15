@@ -91,7 +91,8 @@
 #{$theme_name} .pathWay li:hover,
 #{$theme_name} #menuPrincipal .btMenu a:hover,
 #{$theme_name} #menuPrincipal .btMenu a:active,
-#{$theme_name} .notification header:before {
+#{$theme_name} .notification header:before,
+#{$theme_name} .switch-btn input:checked + label span:after{
   background-color: $pallet_1;
 }
 
