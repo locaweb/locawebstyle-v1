@@ -1,0 +1,102 @@
+.switch-btn {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+}
+.switch-btn a {
+  color: #555555;
+}
+.switch-btn .switch-label {
+  display: inline-block;
+}
+.switch-btn .switch-label span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.switch-btn .switch-label span:after {
+  content: "";
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background: #888888 url(../images/ico-switch-on-off.png) -159px center no-repeat;
+  height: 26px;
+  width: 52px;
+  position: relative;
+  z-index: 0;
+  margin-right: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+}
+.switch-btn .switch-label span:before {
+  content: "";
+  -moz-transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+  display: block;
+  width: 23px;
+  height: 20px;
+  border: 1px solid rgba(34, 34, 34, 0.15);
+  background: white url(../images/ico-switch.png) center no-repeat;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+}
+.switch-btn .switch-label span:hover:before, .switch-btn .switch-label span:focus:before {
+  background-color: #ebebeb;
+}
+.switch-btn .switch-label span:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.switch-btn input {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 24px;
+  opacity: 0;
+}
+.switch-btn input:checked + .switch-label span {
+  display: inline-block;
+}
+.switch-btn input:checked + .switch-label span:after {
+  box-shadow: none;
+  background-position: 7px center;
+}
+.switch-btn input:checked + .switch-label span:before {
+  -moz-transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  top: 2px;
+  left: 25px;
+  border-radius: 0 4px 4px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .switch-btn input + .switch-label:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: attr(data-off);
+  }
+  .switch-btn input + .switch-label span:before {
+    -moz-transition: none 1s;
+    -webkit-transition: none 1s;
+    transition: none 1s;
+  }
+  .switch-btn input:checked + .switch-label:after {
+    content: attr(data-on);
+  }
+  .switch-btn input:checked + .switch-label span:before {
+    -moz-transition: none 1s;
+    -webkit-transition: none 1s;
+    transition: none 1s;
+  }
+}
