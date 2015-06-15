@@ -1,0 +1,36 @@
+---
+title: Componentes - Switch Button
+
+menu_page: sidebar-componentes.erb
+---
+
+<article class="text">
+    <header>
+    	<h1>Botão Switch</h1>
+    	<h3>permite a escolha de apenas uma entre duas opções (Ativado ou Desativado).</h3>
+    </header>
+
+    <p>Você pode definir que será escrito na label utilizando os atributos <code>data-on</code> quando estiver checado, e <code>data-off</code> quando não estiver checado.</p>
+<div class="example">
+	<%= partial "manual/componentes/partials/switch-button" %>
+	</div>
+<pre class="lang-html prettyprint linenums">
+&lt;div class="switch-btn"&gt;
+	&lt;input type="checkbox" id="switch1"&gt;
+	&lt;label class="switch-label" for="switch1" name="label-switch" data-off="Desativado" data-on="Ativado"&gt;&lt;span&gt;&lt;/span&gt;&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+
+	<h3>Botão switch com link</h3>
+	<p>Pra deixá-lo com visual ativado é necessário que o checkbox esteja checado.</p>
+	<div class="example">	<%= partial "manual/componentes/partials/switch-button-link" %></div>
+<pre class="lang-html prettyprint linenums">
+&lt;div class="switch-btn"&gt;
+	&lt;a href="#"&gt;
+		&lt;input type="checkbox" checked id="switch1"&gt;
+		&lt;label class="switch-label" for="switch1" name="label-switch" data-off="Desativado" data-on="Ativado"&gt;&lt;span&gt;&lt;/span&gt;&lt;/label&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+
+</article>
