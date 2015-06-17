@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <title>Componentes - Labels - Guia de estilos da Locaweb</title>
+  <title>Componentes - Switch Button - Guia de estilos da Locaweb</title>
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
@@ -11,7 +11,7 @@
   <link href="../../../assets/stylesheets/manual.css" rel="stylesheet" type="text/css" />
 
 </head>
-<body class="manual manual_componentes manual_componentes_labels manual_componentes_labels_index">
+<body class="manual manual_componentes manual_componentes_botao-switch manual_componentes_botao-switch_index">
 
 <!-- topbar header -->
 <header id="topbar" class="clearfix">
@@ -79,73 +79,42 @@
 
 	<article class="text">
     <header>
-    	<h1>Labels ou tags</h1>
-    	<h3>Labels e tags servem para marcar informações importantes de forma discreta e organizada</h3>
+    	<h1>Botão Switch</h1>
+    	<h3>permite a escolha de apenas uma entre duas opções (Ativado ou Desativado).</h3>
     </header>
 
-    <p>
-                No Bootstrap eles chamam de LABELS. Mas para não confundirmos com LABELS de input, colocamos o nome de Tags.
-            </p>
+    <p>Você pode definir que será escrito na label utilizando os atributos <code>data-on</code> quando estiver checado, e <code>data-off</code> quando não estiver checado.</p>
+<div class="example">
+	<div class="switch-btn">
+	<input type="checkbox" id="switch1">
+	<label class="switch-label" for="switch1" name="label-switch" data-off="Desativado" data-on="Ativado"><span></span></label>
+</div>
+	</div>
+<pre class="lang-html prettyprint linenums">
+&lt;div class="switch-btn"&gt;
+	&lt;input type="checkbox" id="switch1"&gt;
+	&lt;label class="switch-label" for="switch1" name="label-switch" data-off="Desativado" data-on="Ativado"&gt;&lt;span&gt;&lt;/span&gt;&lt;/label&gt;
+&lt;/div&gt;
+</pre>
 
-    <table class="table table-bordered table-striped">
-        <thead>
-            <tr>
-                <th>Labels</th>
-                <th>Markup</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <span class="label">Default</span>
-                </td>
-                <td>
-                    <code>&lt;span class="label"&gt;Default&lt;/span&gt;</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span class="label label-success">Success</span>
-                </td>
-                <td>
-                    <code>&lt;span class="label label-success"&gt;Success&lt;/span&gt;</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span class="label label-warning">Warning</span>
-                </td>
-                <td>
-                    <code>&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span class="label label-important">Important</span>
-                </td>
-                <td>
-                    <code>&lt;span class="label label-important"&gt;Important&lt;/span&gt;</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span class="label label-info">Info</span>
-                </td>
-                <td>
-                    <code>&lt;span class="label label-info"&gt;Info&lt;/span&gt;</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <span class="label label-inverse">Inverse</span>
-                </td>
-                <td>
-                    <code>&lt;span class="label label-inverse"&gt;Inverse&lt;/span&gt;</code>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</article>	
+	<h3>Botão switch com link</h3>
+	<p>Pra deixá-lo com visual ativado é necessário que o checkbox esteja checado.</p>
+	<div class="example">	<div class="switch-btn">
+	<a href="#">
+		<input type="checkbox" checked id="switch2">
+		<label class="switch-label" for="switch2" name="label-switch2" data-off="Desativado" data-on="Ativado"><span></span></label>
+	</a>
+</div></div>
+<pre class="lang-html prettyprint linenums">
+&lt;div class="switch-btn"&gt;
+	&lt;a href="#"&gt;
+		&lt;input type="checkbox" checked id="switch1"&gt;
+		&lt;label class="switch-label" for="switch1" name="label-switch" data-off="Desativado" data-on="Ativado"&gt;&lt;span&gt;&lt;/span&gt;&lt;/label&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+
+</article>
 </section>
 <!-- END post content -->
 
