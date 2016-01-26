@@ -1,3 +1,7 @@
+> Essa é a primeira versão do Locaweb Style. Nós **não damos mais suporte** a esta versão. Estamos concentrando nossos esforços na versão mais nova do framework: [Barbecue](http://github.com/locaweb/locawebstyle). Essa versão ainda estará disponível para contribuidores e os assets estáticos continuarão disponíveis nos nossos servidores.
+
+-------------
+
 Locaweb Style Guide
 =================
 
@@ -12,7 +16,7 @@ ________
 
 Instalando e contribuindo
 =================
-Mas que coisa linda você contribuir com seu código. Seja bem-vindo. 
+Mas que coisa linda você contribuir com seu código. Seja bem-vindo.
 
 Embora só utilizemos arquivos estáticos no [Locaweb Style](http://locaweb.github.io/locawebstyle-v1/), toda a estrutura é baseada em ruby/rails para compilarmos os assets. Por isso você precisa saber como rodar aplicações rails em sua máquina. Se você não sabe, [dá uma procurada no Google](http://lmgtfy.com/?q=como+rodar+rails). Se você já sabe fazer isso, basta clonar o projeto e rodar a aplicação. Rode um bundle da vida para poder instalar alguma dependência e etc…
 
@@ -35,7 +39,7 @@ Os estilos e comportamentos foram baseados no Bootstrap, framework criado pelo [
 Se você não conhece, visite o github do projeto e conheça já!
 [Bootstrap](twitter.github.com/bootstrap/)
 
-*Curiosidade* -- 
+*Curiosidade* --
 Dentro do Bootstrap eles usam o Normalize, que é um CSS Reset bastante completo. Ele reseta e compatibiliza alguns problemas de textos e valores padrões em elementos HTML. O Normalize foi criado por [Nicolas Gallagher](@necolas) e [Jonathan Neal](@jon_neal).
 [Dê uma olhada no projeto](http://necolas.github.com/normalize.css/)
 
